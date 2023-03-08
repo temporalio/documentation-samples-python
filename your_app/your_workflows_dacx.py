@@ -2,10 +2,10 @@ from datetime import timedelta
 
 from temporalio import workflow
 
-from your_dataobject import YourParams
+from your_dataobject_dacx import YourParams
 
 with workflow.unsafe.imports_passed_through():
-    from your_activities import your_activity
+    from your_activities_dacx import your_activity
 
 
 @workflow.defn

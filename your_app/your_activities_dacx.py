@@ -1,6 +1,6 @@
 from temporalio import activity
 
-from your_dataobject import YourParams
+from your_dataobject_dacx import YourParams
 
 """
 You can develop an Activity Definition by using the `@activity.defn` decorator.

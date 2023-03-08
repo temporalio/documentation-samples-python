@@ -2,7 +2,7 @@ import asyncio
 
 from temporalio.client import Client
 
-from your_workflows import YourWorkflow
+from your_workflows_dacx import YourWorkflow
 
 """
 Use the `connect()` method on the Client class to create and connect to a Temporal Client to the Temporal Cluster.
