@@ -9,20 +9,55 @@
 - [x] trigger: triggers an immediate action with a given Schedule. By default, this action is subject to the Overlap Policy of the Schedule.
 - [x] update: updates an existing Schedule.
 
+1. Start your Worker
 
 ```bash
-python3 run_worker.py
+poetry run python run_worker.py
 ```
 
+2. Run your Workflow
+
 ```bash
-python3 run_workflow.py
-python3 delete_workflow.py
-python3 toggle_workflow.py
+poetry run python start_schedules.py
+poetry run python delete_schedule.py
+poetry run python describe_schedule.py
+poetry run python toggle_schedule.py
+poetry run python update_schedule.py
 python3 update_workflow.py
 ```
 
-## Terminate
+## Delete Scheduled Workflow
+
+To delete a Scheduled Workflow, start the Schedules then run the `delete_schedule` module.
 
 ```bash
-temporal workflow terminate --workflow-id=schedules-workflow-id
+poetry run python start_schedules.py
+poetry run python delete_schedule.py
 ```
+
+<!--
+Or use the Temporal CLI.
+
+```bash
+temporal schedule delete --schedule-id=workflow-schedule-id
+```
+-->
+
+## Describe a Scheduled Workflow
+
+To describe a Scheduled Workflow, start the Schedules then run the `describe_schedule` module.
+
+```bash
+poetry run python start_schedules.py
+poetry run python describe_schedule.py
+```
+
+## Toggle a Scheduled Workflow
+
+To toggle or pause a Scheduled Workflow, start the Schedule then run the `toggle_schedule` module.
+
+```bash
+poetry run python start_schedules.py
+poetry run python toggle_schedule.py
+```
+

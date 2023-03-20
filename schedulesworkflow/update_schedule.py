@@ -1,45 +1,23 @@
 import asyncio
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 from temporalio.client import (
     Client,
-    Schedule,
-    ScheduleActionStartWorkflow,
-    ScheduleIntervalSpec,
-    ScheduleSpec,
     ScheduleUpdate,
     ScheduleUpdateInput,
 )
 
-from your_workflows import YourSchedulesWorkflow
-
 
 async def main():
     client = await Client.connect("localhost:7233")
-    handle = await client.create_schedule(
+    handle = client.get_schedule_handle(
         "workflow-schedule-id",
-        Schedule(
-            action=ScheduleActionStartWorkflow(
-                YourSchedulesWorkflow.run,
-                "my schedule arg",
-                id="schedules-workflow-id",
-                task_queue="my-task-queue",
-            ),
-            spec=ScheduleSpec(
-                intervals=[
-                    ScheduleIntervalSpec(
-                        every=timedelta(days=10),
-                        offset=timedelta(days=2),
-                    )
-                ],
-            ),
-        ),
     )
 
     """
     Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
     To update a Schedule, use a callback to build the update from the description.
-    The following example updates the schedule to use a new argument and changes the timeout.
+    The following example updates the Schedule to use a new argument and changes the timeout.
     """
 
     async def update_schedule_simple(
@@ -63,17 +41,23 @@ async def main():
         return len([i async for i in await client.list_schedules()])
 
     print(f"Schedule count: {await schedule_count()}")
-    print(f"Result: {handle}")
 
 
 if __name__ == "__main__":
     asyncio.run(main())
 
+""" @dac
+id: how-to-update-scheduled-workflow-execution-in-python
+title: How to update a Scheduled Workflow Execution in Python
+sidebar_label: Update a Scheduled Workflow Execution
+description: Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
+lines: 17-32
+@dac """
 
 """ @dac
 id: how-to-list-scheduled-workflow-executions-in-python
 title: How to list Scheduled Workflow Executions in Python
 sidebar_label: List Scheduled Workflow Executions
 description: Use `list_schedules()` on the Client to list all Workflow Execution in the Python SDK.
-lines:
+lines: 35-41
 @dac """

@@ -13,19 +13,10 @@ from temporalio.client import (
 
 from your_workflows import YourSchedulesWorkflow
 
-"""
-Use the `connect()` method on the Client class to create and connect to a Temporal Client to the Temporal Cluster.
-"""
-
-"""
-To start a Workflow Execution in Python, use either the start_workflow() or execute_workflow() asynchronous methods in the Client.
-"""
-
 
 async def main():
     client = await Client.connect("localhost:7233")
 
-    # Start workflow every day at 4 o'clock
     result = await client.create_schedule(
         "workflow-schedule-id",
         Schedule(
@@ -66,14 +57,6 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-
-""" @dac
-id: how-to-connect-to-a-cluster-in-python
-title: How to connect to a Temporal Cluster in Python
-sidebar_label: Connect a Temporal Client
-description: Connect a Temporal Client to a Cluster in the Python SDK.
-lines:
-@dac """
 
 """ @dac
 id: how-to-schedule-a-workflow-execution-in-python
