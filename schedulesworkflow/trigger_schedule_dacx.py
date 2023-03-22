@@ -1,0 +1,31 @@
+import asyncio
+
+from temporalio.client import (
+    Client,
+)
+
+
+async def main():
+    client = await Client.connect("localhost:7233")
+    handle = client.get_schedule_handle(
+        "workflow-schedule-id",
+    )
+    """
+    To trigger a Scheduled Workflow Execution in Python, use the [trigger()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#trigger) asynchronous method on the Schedule Handle.
+    """
+    await handle.trigger()
+
+    desc = await handle.describe()
+
+    print(f"Describe the schedule's state: {desc.schedule.state}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+""" @dac
+id: how-to-trigger-a-scheduled-workflow-execution-in-python
+title: How to Trigger a Scheduled Workflow Execution in Python
+sidebar_label: Trigger a Scheduled Workflow Execution
+description: Trigger a Scheduled Workflow Execution in the Python SDK.
+lines: 14-17
+@dac """
