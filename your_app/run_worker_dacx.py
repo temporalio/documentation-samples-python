@@ -31,10 +31,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 
-""" @dac
+""" @dacx
 id: how-to-develop-a-worker-program-in-python
 title: How to develop a Worker Program in Python
 sidebar_label: Worker Program
 description: Create a new instance of a Worker.
 lines: 21-27
-@dac """
+@dacx """

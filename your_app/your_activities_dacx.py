@@ -25,26 +25,26 @@ async def your_activity(input: YourParams) -> str:
     return f"{input.greeting}, {input.name}!"
 
 
-""" @dac
+""" @dacx
 id: how-to-develop-an-activity-definition-in-python
 title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a `struct` method.
 lines: 6-8, 23-25
-@dac """
+@dacx """
 
-""" @dac
+""" @dacx
 id: how-to-define-activity-parameters-in-python
 title: How to do define Activity parameters in Python
 label: Activity parameters
 description: The only required parameter is `context.Context`, but Activities can support many custom parameters.
 lines: 11-13, 1-3, 23-25
-@dac """
+@dacx """
 
-""" @dac
+""" @dacx
 id: how-to-define-activity-return-values-in-python
 title: How to define Activity return values in Python
 label: Activity return values
 description: A Go-based Activity Definition can return either just an `error` or a `customValue, error` combination.
 lines: 17-19, 23-25
-@dac """
+@dacx """

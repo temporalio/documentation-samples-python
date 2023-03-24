@@ -27,18 +27,18 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 
-""" @dac
+""" @dacx
 id: how-to-connect-to-a-cluster-in-python
 title: How to connect to a Temporal Cluster in Python
 sidebar_label: Connect a Temporal Client
 description: Connect a Temporal Client to a Cluster in the Python SDK.
 lines:
-@dac """
+@dacx """
 
-""" @dac
+""" @dacx
 id: how-to-start-a-workflow-execution-in-python
 title: How to start a Workflow Execution in Python
 sidebar_label: Start a Workflow Execution
 description: Start a Workflow Execution in the Python SDK.
 lines: 16-18, 20-22
-@dac """
+@dacx """
