@@ -30,7 +30,7 @@ id: how-to-develop-an-activity-definition-in-python
 title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a struct method.
-lines: 6-8, 23-25
+lines: 1, 5-8, 23-25
 @dacx """
 
 """ @dacx
@@ -38,7 +38,7 @@ id: how-to-define-activity-parameters-in-python
 title: How to do define Activity parameters in Python
 label: Activity parameters
 description: The only required parameter is `context.Context`, but Activities can support many custom parameters.
-lines: 11-13, 1-3, 23-25
+lines: 1-3, 10-14, 24
 @dacx """
 
 """ @dacx
