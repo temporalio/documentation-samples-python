@@ -46,5 +46,5 @@ id: how-to-define-activity-return-values-in-python
 title: How to define Activity return values in Python
 label: Activity return values
 description: todo
-lines: 17-19, 23-25
+lines: 16-20, 23-25
 @dacx """
