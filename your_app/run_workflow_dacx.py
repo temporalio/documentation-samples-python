@@ -4,13 +4,13 @@ from temporalio.client import Client
 
 from your_workflows_dacx import YourWorkflow
 
-"""
+"""!
 Use the `connect()` method on the Client class to create and connect to a Temporal Client to the Temporal Cluster.
-"""
+!"""
 
-"""
+"""!
 To start a Workflow Execution in Python, use either the start_workflow() or execute_workflow() asynchronous methods in the Client.
-"""
+!"""
 
 
 async def main():
@@ -32,7 +32,7 @@ id: how-to-connect-to-a-cluster-in-python
 title: How to connect to a Temporal Cluster in Python
 label: Connect a Temporal Client
 description: Connect a Temporal Client to a Cluster in the Python SDK.
-lines:
+lines: 7-9, 16-23
 @dacx """
 
 """ @dacx
