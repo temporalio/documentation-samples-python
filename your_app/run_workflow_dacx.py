@@ -8,9 +8,9 @@ from your_workflows_dacx import YourWorkflow
 Use the `connect()` method on the Client class to create and connect to a Temporal Client to the Temporal Cluster.
 dacx """
 
-""" dacx
+"""dacx
 To start a Workflow Execution in Python, use either the start_workflow() or execute_workflow() asynchronous methods in the Client.
-dacx """
+dacx"""
 
 
 async def main():
