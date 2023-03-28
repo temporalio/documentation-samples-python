@@ -21,7 +21,7 @@ if __name__ == "__main__":
 """ @dacx
 id: how-to-list-scheduled-workflow-executions-in-python
 title: How to list Scheduled Workflow Executions in Python
-sidebar_label: List Scheduled Workflow Executions
+label: List Scheduled Workflow Executions
 description: Use `list_schedules()` on the Client to list all Workflow Execution in the Python SDK.
 lines: 8-14
-@dacx"""
+@dacx """

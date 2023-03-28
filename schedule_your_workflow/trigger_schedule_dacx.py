@@ -20,7 +20,7 @@ if __name__ == "__main__":
 """ @dacx
 id: how-to-trigger-a-scheduled-workflow-execution-in-python
 title: How to Trigger a Scheduled Workflow Execution in Python
-sidebar_label: Trigger a Scheduled Workflow Execution
+label: Trigger a Scheduled Workflow Execution
 description: Trigger a Scheduled Workflow Execution in the Python SDK.
 lines: 11-14
 @dacx """

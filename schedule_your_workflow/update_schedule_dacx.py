@@ -37,7 +37,7 @@ if __name__ == "__main__":
 """ @dacx
 id: how-to-update-scheduled-workflow-execution-in-python
 title: How to update a Scheduled Workflow Execution in Python
-sidebar_label: Update a Scheduled Workflow Execution
+label: Update a Scheduled Workflow Execution
 description: Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
 lines: 17-30
 @dacx """

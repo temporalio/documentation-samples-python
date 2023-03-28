@@ -36,7 +36,7 @@ if __name__ == "__main__":
 """ @dacx
 id: how-to-backfill-a-scheduled-workflow-execution-in-python
 title: How to backfill a Scheduled Workflow Execution in Python
-sidebar_label: Backfill a Scheduled Workflow Execution
+label: Backfill a Scheduled Workflow Execution
 description: Use the `backfill()` asynchronous method on the Schedule Handler.
 lines: 4-8, 17-29
-@dacx"""
+@dacx """
