@@ -14,19 +14,17 @@ async def main():
         "workflow-schedule-id",
     )
     now = datetime.utcnow()
-    if now.second == 0:
-        now += timedelta(seconds=1)
     """
-    To Backfill a Scheduled Workflow Execution in Python, use the [backfill()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#backfill) asynchronous 
+    To Backfill a Scheduled Workflow Execution in Python, use the [backfill()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#backfill) asynchronous
     method on the Schedule Handle.
     """
     await handle.backfill(
         ScheduleBackfill(
-            start_at=now,
-            end_at=now,
+            start_at=now - timedelta(minutes=10),
+            end_at=now - timedelta(minutes=9),
             overlap=ScheduleOverlapPolicy.ALLOW_ALL,
         ),
-    )
+    ),
 
     print(f"Result: {handle}")
 

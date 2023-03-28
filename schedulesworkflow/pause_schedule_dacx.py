@@ -1,8 +1,6 @@
 import asyncio
 
-from temporalio.client import (
-    Client,
-)
+from temporalio.client import Client
 
 
 async def main():
@@ -11,14 +9,10 @@ async def main():
         "workflow-schedule-id",
     )
     """
-    To toggle, or pause a Scheduled Workflow Execution in Python, use the [pause()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#pause) asynchronous method on the Schedule Handle.
+    To pause a Scheduled Workflow Execution in Python, use the [pause()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#pause) asynchronous method on the Schedule Handle.
     You can pass a `note` to the `pause()` method to provide a reason for pausing the schedule.
     """
     await handle.pause(note="Pausing the schedule for now")
-
-    desc = await handle.describe()
-
-    print(f"Describe the schedule's state: {desc.schedule.state}")
 
 
 if __name__ == "__main__":

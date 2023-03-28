@@ -1,8 +1,6 @@
 import asyncio
 
-from temporalio.client import (
-    Client,
-)
+from temporalio.client import Client
 
 
 async def main():
@@ -15,13 +13,10 @@ async def main():
     """
     await handle.trigger()
 
-    desc = await handle.describe()
-
-    print(f"Describe the schedule's state: {desc.schedule.state}")
-
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 """ @dac
 id: how-to-trigger-a-scheduled-workflow-execution-in-python
 title: How to Trigger a Scheduled Workflow Execution in Python
