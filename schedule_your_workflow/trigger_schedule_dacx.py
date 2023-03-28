@@ -8,9 +8,9 @@ async def main():
     handle = client.get_schedule_handle(
         "workflow-schedule-id",
     )
-    """
+    """dacx
     To trigger a Scheduled Workflow Execution in Python, use the [trigger()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#trigger) asynchronous method on the Schedule Handle.
-    """
+    dacx"""
     await handle.trigger()
 
 

@@ -14,11 +14,11 @@ async def main():
         "workflow-schedule-id",
     )
 
-    """
+    """dacx
     Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
     To update a Schedule, use a callback to build the update from the description.
     The following example updates the Schedule to use a new argument and changes the timeout.
-    """
+    dacx"""
 
     async def update_schedule_simple(input: ScheduleUpdateInput) -> ScheduleUpdate:
         schedule_action = input.description.schedule.action
