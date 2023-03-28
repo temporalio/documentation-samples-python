@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "documentation-samples-python"
+version = "0.1.0"
+description = ""
+authors = ["Patrick Rachford <prachford@icloud.com>"]
+readme = "README.md"
+packages = [{include = "documentation_samples_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+temporalio = "^1.1.0"
+ruff = "^0.0.246"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+format = [{cmd = "ruff --fix ."}]
+lint = [{cmd = "ruff check ."}]
+
+[tool.ruff]
+select = ["E", "F"]
+ignore = ["E501", "W505"]

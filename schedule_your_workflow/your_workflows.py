@@ -9,7 +9,7 @@ with workflow.unsafe.imports_passed_through():
 
 
 @workflow.defn
-class YourWorkflow:
+class YourSchedulesWorkflow:
     @workflow.run
     async def run(self, name: str) -> str:
         return await workflow.execute_activity(
