@@ -40,5 +40,5 @@ id: how-to-start-a-workflow-execution-in-python
 title: How to start a Workflow Execution in Python
 label: Start a Workflow Execution
 description: Start a Workflow Execution in the Python SDK.
-lines: 16-18, 20-22
+lines: 11-13, 16-22
 @dacx """
