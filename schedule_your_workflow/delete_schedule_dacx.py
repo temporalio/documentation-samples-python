@@ -22,5 +22,5 @@ id: how-to-delete-a-scheduled-workflow-execution-in-python
 title: How to delete a Scheduled Workflow Execution in Python
 sidebar_label: Delete a Scheduled Workflow Execution
 description: Use the `delete()` asynchronous method on the Schedule Handler.
-lines: 13-16
+lines: 11-14
 @dac """

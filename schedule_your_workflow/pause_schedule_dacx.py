@@ -24,5 +24,5 @@ id: how-to-pause-a-scheduled-workflow-execution-in-python
 title: How to Pause Scheduled Workflow Execution in Python
 sidebar_label: Pause a Scheduled Workflow Execution
 description: Use the `pause()` asynchronous method on the Schedule Handle.
-lines: 14-18
+lines: 11-15
 @dac """

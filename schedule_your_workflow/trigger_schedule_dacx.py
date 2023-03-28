@@ -22,5 +22,5 @@ id: how-to-trigger-a-scheduled-workflow-execution-in-python
 title: How to Trigger a Scheduled Workflow Execution in Python
 sidebar_label: Trigger a Scheduled Workflow Execution
 description: Trigger a Scheduled Workflow Execution in the Python SDK.
-lines: 14-17
+lines: 11-14
 @dac """

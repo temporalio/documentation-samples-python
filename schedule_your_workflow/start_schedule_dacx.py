@@ -48,5 +48,5 @@ id: how-to-schedule-a-workflow-execution-in-python
 title: How to Schedule a Workflow Execution in Python
 sidebar_label: Schedule a Workflow Execution
 description: Schedule a Workflow Execution in the Python SDK.
-lines: 18-64
+lines: 18-39
 @dac """
