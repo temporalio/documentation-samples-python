@@ -14,14 +14,14 @@ from your_workflows import YourSchedulesWorkflow
 
 async def main():
     client = await Client.connect("localhost:7233")
-    """
+    """ dacx
     To create a Scheduled Workflow Execution in Python, use the [create_schedule()](https://python.temporal.io/temporalio.client.Client.html#create_schedule)
     asynchronous method on the Client.
     Then pass the Schedule ID and the Schedule object to the method to create a Scheduled Workflow Execution.
     Set the `action` parameter to `ScheduleActionStartWorkflow` to start a Workflow Execution.
     Optionally, you can set the `spec` parameter to `ScheduleSpec` to specify the schedule or set the `intervals` parameter to `ScheduleIntervalSpec` to specify the interval.
     Other options include: `cron_expressions`, `skip`, `start_at`, and `jitter`.
-    """
+    dacx """
     await client.create_schedule(
         "workflow-schedule-id",
         Schedule(
@@ -43,10 +43,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 
-""" @dac
+""" @dacx
 id: how-to-schedule-a-workflow-execution-in-python
 title: How to Schedule a Workflow Execution in Python
 sidebar_label: Schedule a Workflow Execution
 description: Schedule a Workflow Execution in the Python SDK.
 lines: 18-39
-@dac """
+@dacx """

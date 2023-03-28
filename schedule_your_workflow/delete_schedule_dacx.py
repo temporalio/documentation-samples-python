@@ -17,10 +17,10 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-""" @dac
+""" @dacx
 id: how-to-delete-a-scheduled-workflow-execution-in-python
 title: How to delete a Scheduled Workflow Execution in Python
 sidebar_label: Delete a Scheduled Workflow Execution
 description: Use the `delete()` asynchronous method on the Schedule Handler.
 lines: 11-14
-@dac """
+@dacx"""
