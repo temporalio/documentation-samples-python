@@ -2,9 +2,9 @@ import asyncio
 
 from temporalio.client import Client
 
-""" dacx
+"""dacx
 To delete a Scheduled Workflow Execution in Python, use the [delete()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#delete) asynchronous method on the Schedule Handle.
-dacx """
+dacx"""
 
 
 async def main():

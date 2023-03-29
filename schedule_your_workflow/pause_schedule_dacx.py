@@ -2,10 +2,10 @@ import asyncio
 
 from temporalio.client import Client
 
-""" dacx
+"""dacx
 To pause a Scheduled Workflow Execution in Python, use the [pause()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#pause) asynchronous method on the Schedule Handle.
 You can pass a `note` to the `pause()` method to provide a reason for pausing the schedule.
-dacx """
+dacx"""
 
 
 async def main():

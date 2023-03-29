@@ -2,9 +2,9 @@ import asyncio
 
 from temporalio.client import Client
 
-""" dacx
+"""dacx
 To trigger a Scheduled Workflow Execution in Python, use the [trigger()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#trigger) asynchronous method on the Schedule Handle.
-dacx """
+dacx"""
 
 
 async def main():

@@ -2,10 +2,10 @@ import asyncio
 
 from temporalio.client import Client
 
-""" dacx
+"""dacx
 To list all schedules, use the [list_schedules()](https://python.temporal.io/temporalio.client.Client.html#list_schedules) asynchronous method on the Client.
 If a schedule is added or deleted, it may not be available in the list immediately.
-dacx """
+dacx"""
 
 
 async def main() -> None:

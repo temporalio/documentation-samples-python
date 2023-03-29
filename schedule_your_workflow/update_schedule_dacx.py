@@ -7,11 +7,11 @@ from temporalio.client import (
     ScheduleUpdateInput,
 )
 
-""" dacx
+"""dacx
 Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
 To update a Schedule, use a callback to build the update from the description.
 The following example updates the Schedule to use a new argument.
-dacx """
+dacx"""
 
 
 async def main():
