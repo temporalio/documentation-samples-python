@@ -26,7 +26,7 @@ poetry run python run_worker.py
 Start the Schedules file, then run a feature.
 
 ```bash
-poetry run python start_schedules_dacx.py
+poetry run python start_schedule_dacx.py
 poetry run python backfill_schedule_dacx.py
 poetry run python delete_schedule_dacx.py
 poetry run python describe_schedule_dacx.py
