@@ -22,6 +22,7 @@ dacx"""
 You can customize the Workflow name with a custom name in the decorator argument. For example, `@workflow.defn(name="your-workflow-name")`. If the name parameter is not specified, the Workflow name defaults to the function name.
 dacx"""
 
+
 @workflow.defn(name="YourWorkflow")
 class YourWorkflow:
     @workflow.run
@@ -32,12 +33,13 @@ class YourWorkflow:
             start_to_close_timeout=timedelta(seconds=10),
         )
 
+
 """ @dacx
 id: how-to-spawn-an-activity-execution-in-python
 title: How to spawn an Activity Execution in Python
 label: Activity Execution
 description: Use the `execute_activity()` operation from within your Workflow Definition.
-lines: 3, 10-19, 25-33
+lines: 3, 10-19, 26-34
 @dacx """
 
 
@@ -46,5 +48,5 @@ id: how-to-customize-workflow-type-in-python
 title: How to customize Workflow types in Python
 label: Customize Workflow types
 description: Customize Workflow types.
-lines: 3, 21-23, 25-33
+lines: 3, 21-23, 26-34
 @dacx """

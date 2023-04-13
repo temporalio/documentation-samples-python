@@ -12,6 +12,7 @@ Then use [`describe()`](https://python.temporal.io/temporalio.client.workflowhan
 If the Workflow does not exist, this call fails.
 dacx"""
 
+
 async def main():
     client = await Client.connect("localhost:7233")
 
@@ -20,6 +21,7 @@ async def main():
     )
     results = await handle.result()
     print(f"Result: {results}")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
@@ -30,5 +32,5 @@ id: how-to-get-the-result-of-a-workflow-execution-in-python
 title: How to get the result of a Workflow Execution in Python
 label: Workflow Execution result
 description: Workflow Execution result.
-lines: 5-13, 15-25
+lines: 5-13, 16-27
 @dacx """

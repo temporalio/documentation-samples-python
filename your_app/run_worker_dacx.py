@@ -16,6 +16,7 @@ dacx"""
 When a `Worker` is created, it accepts a list of Workflows in the `workflows` parameter, a list of Activities in the `activities` parameter, or both.
 dacx"""
 
+
 async def main():
     client = await Client.connect("localhost:7233")
     worker = Worker(
@@ -36,7 +37,7 @@ id: how-to-develop-a-worker-program-in-python
 title: How to develop a Worker Program in Python
 label: Worker Program
 description: Create a new instance of a Worker.
-lines: 3-4, 9-13, 19-31
+lines: 3-4, 9-13, 20-32
 @dacx """
 
 """ @dacx
@@ -44,5 +45,5 @@ id: how-to-register-types-with-a-worker-in-python
 title: How to register types with a Worker in Python
 label: Register types with a Worker
 description: Register types with a Worker.
-lines: 15-17, 19-31
+lines: 15-17, 20-32
 @dacx """

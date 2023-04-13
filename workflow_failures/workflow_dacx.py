@@ -11,6 +11,7 @@ To cancel a Workflow Execution, you can set the `RetryPolicy`'s `maximum_attempt
 You can also set the `RetryPolicy`'s `non_retryable_error_types` to a list of error types that you want to cancel the Workflow Execution.
 dacx"""
 
+
 @workflow.defn
 class MoneyTransferWorkflow:
     @workflow.run
@@ -61,5 +62,5 @@ id: how-to-cancel-a-workflow-execution-in-python
 title: How to Cancel a Workflow Execution in Python
 label: Cancel a Workflow Execution
 description: Cancel a Workflow Execution with Retry Policies.
-lines: 4, 9-12. 14-30
+lines: 4, 9-12. 15-31
 @dacx """

@@ -24,6 +24,7 @@ You can customize the Activity name with a custom name in the decorator argument
 If the name parameter is not specified, the Activity name defaults to the function name.
 dacx"""
 
+
 @activity.defn(name="your_activity")
 async def your_activity(input: YourParams) -> str:
     return f"{input.greeting}, {input.name}!"
@@ -34,7 +35,7 @@ id: how-to-develop-an-activity-definition-in-python
 title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a struct method.
-lines: 1, 5-8, 27-29
+lines: 1, 5-8, 28-30
 @dacx """
 
 """ @dacx
@@ -42,7 +43,7 @@ id: how-to-define-activity-parameters-in-python
 title: How to do define Activity parameters in Python
 label: Activity parameters
 description: The only required parameter is `context.Context`, but Activities can support many custom parameters.
-lines: 1-3, 10-14, 27-29
+lines: 1-3, 10-14, 28-30
 @dacx """
 
 """ @dacx
@@ -50,7 +51,7 @@ id: how-to-define-activity-return-values-in-python
 title: How to define Activity return values in Python
 label: Activity return values
 description: To return a value of the Workflow, use `return` to return an object.
-lines: 16-20, 27-29
+lines: 16-20, 28-30
 @dacx """
 
 """ @dacx
@@ -58,5 +59,5 @@ id: how-to-customize-activity-type-in-python
 title: How to customize Activity Type in Python
 label: Customize Activity Type
 description: Customize your Activity Type.
-lines: 22-25, 27-29
+lines: 22-25, 28-30
 @dacx """

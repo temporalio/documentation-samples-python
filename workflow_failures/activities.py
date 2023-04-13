@@ -12,8 +12,6 @@ async def withdraw(details: MoneyTransfer):
     return details
 
 
-
-
 @activity.defn
 async def deposit(details: MoneyTransfer):
     logging.info(f"Deposited {details.amount} to {details.receiver}'s account.")
