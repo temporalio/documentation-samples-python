@@ -22,6 +22,28 @@ dacx"""
 You can customize the Workflow name with a custom name in the decorator argument. For example, `@workflow.defn(name="your-workflow-name")`. If the name parameter is not specified, the Workflow name defaults to the function name.
 dacx"""
 
+"""dacx
+In the Temporal Python SDK programming model, Workflows are defined as classes.
+
+Specify the `@workflow.defn` decorator on the Workflow class to identify a Workflow.
+
+Use the `@workflow.run` to mark the entry point method to be invoked. This must be set on one asynchronous method defined on the same class as `@workflow.defn`. Run methods have positional parameters.
+dacx"""
+
+"""dacx
+To return a value of the Workflow, use `return` to return an object.
+
+To return the results of a Workflow Execution, use either `start_workflow()` or `execute_workflow()` asynchronous methods.
+dacx"""
+
+"""dacx
+Use [`start_activity()`](https://python.temporal.io/temporalio.workflow.html#start_activity) to start an Activity and return its handle, [`ActivityHandle`](https://python.temporal.io/temporalio.workflow.ActivityHandle.html). Use [`execute_activity()`](https://python.temporal.io/temporalio.workflow.html#execute_activity) to return the results.
+
+You must provide either `schedule_to_close_timeout` or `start_to_close_timeout`.
+
+`execute_activity()` is a shortcut for `await start_activity()`. An asynchronous `execute_activity()` helper is provided which takes the same arguments as `start_activity()` and `await`s on the result. `execute_activity()` should be used in most cases unless advanced task capabilities are needed.
+dacx"""
+
 
 @workflow.defn(name="YourWorkflow")
 class YourWorkflow:
@@ -39,7 +61,7 @@ id: how-to-spawn-an-activity-execution-in-python
 title: How to spawn an Activity Execution in Python
 label: Activity Execution
 description: Use the `execute_activity()` operation from within your Workflow Definition.
-lines: 3, 10-19, 26-34
+lines: 3, 10-19, 48-56
 @dacx """
 
 
@@ -48,5 +70,31 @@ id: how-to-customize-workflow-type-in-python
 title: How to customize Workflow types in Python
 label: Customize Workflow types
 description: Customize Workflow types.
-lines: 3, 21-23, 26-34
+lines: 3, 21-23, 48-56
+@dacx """
+
+""" @dacx
+id: how-to-develop-a-workflow-definition-in-python
+title: How to develop a Workflow Definition in Python
+label: Develop a Workflow Definition
+description: To develop a Workflow Definition, specify the `@workflow.defn` decorator on the Workflow class and use `@workflow.run` to mark the entry point.
+lines: 3, 25-31, 48-56
+@dacx """
+
+
+""" @dacx
+id: how-to-define-workflow-return-values-in-python
+title: How to define Workflow return values
+label: Define Workflow return values
+description: Define Workflow return values.
+lines: 3, 33-37, 48-56
+@dacx """
+
+
+""" @dacx
+id: how-to-get-the-result-of-an-activity-execution-in-python
+title: How to get the result of an Activity Execution in Python
+label: Get the result of an Activity Execution
+description: Get the result of an Activity Execution.
+lines: 3, 39-45, 48-56
 @dacx """
