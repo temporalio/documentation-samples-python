@@ -45,5 +45,5 @@ id: how-to-connect-to-temporal-cloud-in-python
 title: How to connect to Temporal Cloud
 label: Connect to Temporal Cloud
 description: Use a certificate key pair and your Temporal Cloud Namespace to connect to Temporal Cloud.
-lines: 3, 7-11. 14-28
+lines: 3, 7-11, 14-28
 @dacx """
