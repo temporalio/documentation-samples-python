@@ -2,7 +2,6 @@ from datetime import timedelta
 
 from temporalio import workflow
 
-
 with workflow.unsafe.imports_passed_through():
     from your_activities_dacx import your_activity
     from your_dataobject_dacx import YourParams
@@ -61,7 +60,7 @@ id: how-to-spawn-an-activity-execution-in-python
 title: How to spawn an Activity Execution in Python
 label: Activity Execution
 description: Use the `execute_activity()` operation from within your Workflow Definition.
-lines: 3, 10-19, 48-56
+lines: 3, 9-18, 47-55
 @dacx """
 
 
@@ -70,7 +69,7 @@ id: how-to-customize-workflow-type-in-python
 title: How to customize Workflow types in Python
 label: Customize Workflow types
 description: Customize Workflow types.
-lines: 3, 21-23, 48-56
+lines: 3, 20-22, 47-55
 @dacx """
 
 """ @dacx
@@ -78,7 +77,7 @@ id: how-to-develop-a-workflow-definition-in-python
 title: How to develop a Workflow Definition in Python
 label: Develop a Workflow Definition
 description: To develop a Workflow Definition, specify the `@workflow.defn` decorator on the Workflow class and use `@workflow.run` to mark the entry point.
-lines: 3, 25-31, 48-56
+lines: 3, 24-30, 47-55
 @dacx """
 
 
@@ -87,7 +86,7 @@ id: how-to-define-workflow-return-values-in-python
 title: How to define Workflow return values
 label: Define Workflow return values
 description: Define Workflow return values.
-lines: 3, 33-37, 48-56
+lines: 3, 32-36, 47-55
 @dacx """
 
 
@@ -96,5 +95,5 @@ id: how-to-get-the-result-of-an-activity-execution-in-python
 title: How to get the result of an Activity Execution in Python
 label: Get the result of an Activity Execution
 description: Get the result of an Activity Execution.
-lines: 3, 39-45, 48-56
+lines: 3, 38-44, 47-55
 @dacx """

@@ -1,5 +1,4 @@
 from temporalio import activity
-
 from your_dataobject_dacx import YourParams
 
 """dacx
@@ -35,7 +34,7 @@ id: how-to-develop-an-activity-definition-in-python
 title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: In the Temporal Go SDK programming model, an Activity Definition is an exportable function or a struct method.
-lines: 1, 5-8, 28-30
+lines: 1, 4-7, 27-29
 @dacx """
 
 """ @dacx
@@ -43,7 +42,7 @@ id: how-to-define-activity-parameters-in-python
 title: How to do define Activity parameters in Python
 label: Activity parameters
 description: The only required parameter is `context.Context`, but Activities can support many custom parameters.
-lines: 1-3, 10-14, 28-30
+lines: 1-3, 9-13, 27-29
 @dacx """
 
 """ @dacx
@@ -51,7 +50,7 @@ id: how-to-define-activity-return-values-in-python
 title: How to define Activity return values in Python
 label: Activity return values
 description: To return a value of the Workflow, use `return` to return an object.
-lines: 16-20, 28-30
+lines: 15-19, 27-29
 @dacx """
 
 """ @dacx
@@ -59,5 +58,5 @@ id: how-to-customize-activity-type-in-python
 title: How to customize Activity Type in Python
 label: Customize Activity Type
 description: Customize your Activity Type.
-lines: 22-25, 28-30
+lines: 21-24, 27-29
 @dacx """

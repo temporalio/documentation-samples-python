@@ -2,7 +2,6 @@ import asyncio
 
 from temporalio.client import Client
 from temporalio.worker import Worker
-
 from your_activities_dacx import your_activity
 from your_workflows_dacx import YourWorkflow
 
@@ -37,7 +36,7 @@ id: how-to-develop-a-worker-program-in-python
 title: How to develop a Worker Program in Python
 label: Worker Program
 description: Create a new instance of a Worker.
-lines: 3-4, 9-13, 20-32
+lines: 3-4, 8-12, 19-31
 @dacx """
 
 """ @dacx
@@ -45,5 +44,5 @@ id: how-to-register-types-with-a-worker-in-python
 title: How to register types with a Worker in Python
 label: Register types with a Worker
 description: Register types with a Worker.
-lines: 15-17, 20-32
+lines: 14-16, 19-31
 @dacx """

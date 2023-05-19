@@ -1,11 +1,7 @@
 import asyncio
 from datetime import datetime, timedelta
 
-from temporalio.client import (
-    Client,
-    ScheduleBackfill,
-    ScheduleOverlapPolicy,
-)
+from temporalio.client import Client, ScheduleBackfill, ScheduleOverlapPolicy
 
 """dacx
 To Backfill a Scheduled Workflow Execution in Python, use the [backfill()](https://python.temporal.io/temporalio.client.ScheduleHandle.html#backfill) asynchronous
@@ -39,5 +35,5 @@ id: how-to-backfill-a-scheduled-workflow-execution-in-python
 title: How to backfill a Scheduled Workflow Execution in Python
 label: Backfill a Scheduled Workflow Execution
 description: Use the `backfill()` asynchronous method on the Schedule Handler.
-lines: 10-13, 16-28
+lines: 6-9, 12-24
 @dacx """
