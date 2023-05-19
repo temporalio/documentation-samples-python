@@ -26,9 +26,8 @@ async def main():
         GreetingWorkflow.run,
         id="your-greeting-workflow",
         task_queue="signal-tq",
-        start_signal="submit_greeting",
-        start_signal_args=["User 1"],
     )
+    await handle.signal(GreetingWorkflow.submit_greeting, "User 1")
     await handle.signal(GreetingWorkflow.submit_greeting, "User 2")
     await handle.signal(GreetingWorkflow.submit_greeting, "User 3")
     await handle.signal("Custom Signal Name", "User 4")
@@ -46,7 +45,7 @@ id: how-to-handle-a-signal-in-a-workflow-in-python
 title: How to handle a Signal in Python
 label: Handle a Signal
 description: Set the Signal on the Workflow Handle.
-lines: 3, 6-10, 23-36
+lines: 3, 6-10, 30
 @dacx """
 
 
@@ -54,5 +53,5 @@ lines: 3, 6-10, 23-36
 id: how-to-send-a-signal-from-a-client-in-python
 title: How to send a Signal from a Client in Python
 description: To send a Signal to a Workflow Execution from Client code, use the signal() method on the Workflow handle.
-lines: 3, 12-20, 23-36
+lines: 3, 12-20, 24-30
 @dacx """
