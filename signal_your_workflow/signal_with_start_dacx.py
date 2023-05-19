@@ -31,6 +31,7 @@ if __name__ == "__main__":
 """ @dacx
 id: how-to-send-a-signal-with-start-in-python
 title: How to send a Signal-With-Start in Python
-description: Signal-With-Start
+label: Signal-With-Start
+description: To Signal-With-Start use the `start_workflow()` method and pass the `start_signal` argument with the name of your Signal.
 lines: 3, 6-8, 11-19
 @dacx """
