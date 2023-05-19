@@ -42,5 +42,5 @@ class WorkflowB:
 id: how-to-send-a-signal-from-a-workflow-in-python
 title: How to Send a Signal from a Workflow in Python
 description: Use `get_external_workflow_handle_for` to get a typed Workflow handle to an existing Workflow by its identifier.
-lines: 6-15, 18-38
+lines: 6-15, 33-38
 @dacx """
