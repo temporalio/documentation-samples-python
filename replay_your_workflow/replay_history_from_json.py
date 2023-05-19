@@ -3,7 +3,6 @@ import json
 
 from temporalio.client import Client, WorkflowHistory
 from temporalio.worker import Replayer
-
 from your_workflow import YourWorkflow
 
 

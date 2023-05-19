@@ -1,7 +1,6 @@
 import asyncio
 
 from temporalio.client import Client
-
 from your_workflows_dacx import YourWorkflow
 
 """dacx
@@ -45,7 +44,7 @@ id: how-to-connect-to-a-cluster-in-python
 title: How to connect to a Temporal Cluster in Python
 label: Connect a Temporal Client
 description: Connect a Temporal Client to a Cluster in the Python SDK.
-lines: 7-9, 26-40
+lines: 6-8, 25-39
 @dacx """
 
 """ @dacx
@@ -53,7 +52,7 @@ id: how-to-spawn-a-workflow-execution-in-python
 title: How to start a Workflow Execution in Python
 label: Start a Workflow Execution
 description: Start a Workflow Execution in the Python SDK.
-lines: 11-13, 26-40
+lines: 10-12, 25-39
 @dacx """
 
 
@@ -62,7 +61,7 @@ id: how-to-set-a-workflow-id-in-python
 title: How to set a Workflow Id in Python
 label: Set a Workflow Id
 description: Set a Workflow Id
-lines: 15-19, 26-40
+lines: 14-18, 25-39
 @dacx """
 
 """ @dacx
@@ -70,5 +69,5 @@ id: how-to-set-a-workflow-task-queue-in-python
 title: How to set the Task Queue for Workflow Execution in Python
 label: Set the Task Queue for Workflow Execution
 description: Task Queue
-lines: 21-23, 26-40
+lines: 20-22, 25-39
 @dacx """

@@ -1,9 +1,8 @@
 import asyncio
 
+from activities import deposit, refund, withdraw
 from temporalio.client import Client
 from temporalio.worker import Worker
-
-from activities import deposit, refund, withdraw
 from workflow import MoneyTransferWorkflow
 
 

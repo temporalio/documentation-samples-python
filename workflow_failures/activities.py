@@ -1,8 +1,7 @@
 import logging
 
-from temporalio import activity
-
 from data_obj import MoneyTransfer
+from temporalio import activity
 
 
 @activity.defn

@@ -1,7 +1,6 @@
 import asyncio
 
 from temporalio.client import Client, TLSConfig
-
 from your_workflows_dacx import YourWorkflow
 
 """dacx
@@ -45,5 +44,5 @@ id: how-to-connect-to-temporal-cloud-in-python
 title: How to connect to Temporal Cloud
 label: Connect to Temporal Cloud
 description: Use a certificate key pair and your Temporal Cloud Namespace to connect to Temporal Cloud.
-lines: 3, 7-11, 14-28
+lines: 3, 6-10, 13-27
 @dacx """

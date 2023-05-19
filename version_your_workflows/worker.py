@@ -1,10 +1,9 @@
 import argparse
 import asyncio
 
+from activities import post_patch_activity, pre_patch_activity
 from temporalio.client import Client
 from temporalio.worker import Worker
-
-from activities import post_patch_activity, pre_patch_activity
 
 interrupt_event = asyncio.Event()
 

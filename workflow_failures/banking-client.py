@@ -1,9 +1,8 @@
 import asyncio
 import uuid
 
-from temporalio.client import Client
-
 from data_obj import MoneyTransfer
+from temporalio.client import Client
 from workflow import MoneyTransferWorkflow
 
 
