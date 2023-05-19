@@ -9,7 +9,6 @@ dacx"""
 
 
 async def main():
-
     client = await Client.connect("localhost:7233")
     await client.start_workflow(
         GreetingWorkflow.run,
@@ -29,9 +28,9 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-"""@dacx
+""" @dacx
 id: how-to-send-a-signal-with-start-in-python
 title: How to send a Signal-With-Start in Python
 description: Signal-With-Start
-lines: 3, 6-8, 14-20
-@dacx"""
+lines: 3, 6-8, 11-19
+@dacx """

@@ -11,8 +11,6 @@ async def main():
         id="workflow-b",
         task_queue="signal-tq",
     )
-    await handle_b.signal(WorkflowA.your_signal, "workflow-a")
-
     handle_a = await client.start_workflow(
         WorkflowA.run,
         id="workflow-a",
@@ -20,6 +18,8 @@ async def main():
     )
     result = await handle_a.result()
     print(result)
+    await handle_a.cancel()
+    await handle_b.cancel()
 
 
 if __name__ == "__main__":
