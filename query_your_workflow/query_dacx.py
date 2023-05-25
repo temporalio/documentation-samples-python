@@ -24,7 +24,7 @@ async def main():
     result = await handle.query(GreetingWorkflow.greeting)
 
     print(f"First greeting result: {result}")
-    result = {await handle.query("Custom Query Name")}
+    result = await handle.query("Custom Query Name")
     print(f"Custom query result: {result}")
 
     await asyncio.sleep(3)
