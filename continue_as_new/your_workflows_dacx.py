@@ -6,6 +6,10 @@ from temporalio import workflow
 To Continue-As-New in Python, call the [`continue_as_new()`](https://python.temporal.io/temporalio.workflow.html#continue_as_new) function from inside your Workflow, which will stop the Workflow immediately and Continue-As-New.
 dacx"""
 
+"""dacx
+To set a Timer in Python, call the [`asyncio.sleep()`](https://docs.python.org/3/library/asyncio-task.html#sleeping) function and pass the duration in seconds you want to wait before continuing.
+dacx"""
+
 
 @workflow.defn
 class LoopingWorkflow:
@@ -22,5 +26,13 @@ id: how-to-continue-as-new-in-python
 title: How to Continue-As-New in Python
 label: Continue-As-New
 description: To Continue-As-New in Python, call the continue_as_new() function from inside your Workflow, which will stop the Workflow immediately and Continue-As-New.
-lines: 5-7, 17
+lines: 5-7, 21
+@dacx """
+
+""" @dacx
+id: how-to-set-timers-in-python
+title: How to set Timers in Python
+label: Timers
+description: To set a Timer in Python, call the asyncio.sleep() function and pass the duration in seconds you want to wait before continuing.
+lines: 9-11, 20
 @dacx """
