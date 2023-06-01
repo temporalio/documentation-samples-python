@@ -14,7 +14,7 @@ async def main():
         id="your-workflow-id",
         task_queue="your-task-queue",
     )
-    print(f"Handle: {result}")
+    print(f"Results: {result}")
 
 
 if __name__ == "__main__":
