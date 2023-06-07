@@ -20,7 +20,7 @@ class GreetingWorkflow:
 
     @workflow.run
     async def run(self, name: str) -> None:
-        workflow.logger.info(f"Workflow information: {name}")
+        workflow.logger.info("Workflow input parameter: %s", name)
         self._greeting = f"Hello, {name}!"
 
     @workflow.query
