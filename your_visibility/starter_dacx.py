@@ -40,7 +40,6 @@ async def main():
 
     async for workflow in client.list_workflows('WorkflowType="GreetingWorkflow"'):
         print(f"Workflow: {workflow.id}")
-    await handle.cancel()
 
 
 if __name__ == "__main__":
