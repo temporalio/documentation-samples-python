@@ -1,10 +1,10 @@
 from temporalio import workflow
-from activities import ComposeGreetingInput
+from dataobject import ComposeGreetingInput
 from temporalio.workflow import ParentClosePolicy
 
 """dacx
 To spawn a Child Workflow Execution in Python, use the [`execute_child_workflow()`](https://python.temporal.io/temporalio.workflow.html#execute_child_workflow) function which starts the Child Workflow and waits for completion or
-use the [`start_child_workflow()`](https://python.temporal.io/temporalio.workflow.html#start_child_workflow) function to start a Child Workflow and return its handle. 
+use the [`start_child_workflow()`](https://python.temporal.io/temporalio.workflow.html#start_child_workflow) function to start a Child Workflow and return its handle.
 This is useful if you want to do something after it has only started, or to get the Workflow/Run ID, or to be able to signal it while running.
 
 :::note
@@ -34,7 +34,7 @@ class GreetingWorkflow:
             ComposeGreeting.run,
             ComposeGreetingInput("Hello", name),
             id="hello-child-workflow-workflow-child-id",
-            parent_close_policy=ParentClosePolicy.TERMINATE,
+            parent_close_policy=ParentClosePolicy.ABANDON,
         )
 
 
