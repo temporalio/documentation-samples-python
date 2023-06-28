@@ -2,6 +2,7 @@ import asyncio
 
 from temporalio import workflow
 
+
 @workflow.defn
 class LoopingWorkflow:
     @workflow.run
