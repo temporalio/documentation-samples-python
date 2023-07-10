@@ -25,15 +25,15 @@ dacx"""
 class YourWorkflow:
     @workflow.run
     async def run(self, greeting: str) -> list[str]:
-        your_activity_timeout = await workflow.execute_activity(
+        activity_timeout_result = await workflow.execute_activity(
             your_activity,
             YourParams(greeting, "Activity Timeout"),
             # Activity Execution Timeout
             start_to_close_timeout=timedelta(seconds=10),
-            # schedule_to_start_timeout=timedelta(seconds=5),
-            # start_to_close_timeout=timedelta(seconds=5),
+            # schedule_to_start_timeout=timedelta(seconds=10),
+            # schedule_to_close_timeout=timedelta(seconds=10),
         )
-        your_retry_policy = await workflow.execute_activity(
+        retry_policy_result = await workflow.execute_activity(
             your_activity,
             YourParams(greeting, "Retry Policy"),
             start_to_close_timeout=timedelta(seconds=10),
@@ -46,7 +46,7 @@ class YourWorkflow:
                 # non_retryable_error_types=["ValueError"],
             ),
         )
-        return your_activity_timeout, your_retry_policy
+        return activity_timeout_result, retry_policy_result
 
 
 """ @dacx

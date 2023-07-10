@@ -9,5 +9,5 @@ class LoopingWorkflow:
     async def run(self, iteration: int) -> None:
         if iteration == 5:
             return
-        await asyncio.sleep(1)
+        await asyncio.sleep(10)
         workflow.continue_as_new(iteration + 1)
