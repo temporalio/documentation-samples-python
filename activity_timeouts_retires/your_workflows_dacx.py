@@ -27,15 +27,15 @@ class YourWorkflow:
     async def run(self, greeting: str) -> list[str]:
         activity_timeout_result = await workflow.execute_activity(
             your_activity,
-            YourParams(greeting, "Activity Timeout"),
+            YourParams(greeting, "Activity Timeout option"),
             # Activity Execution Timeout
             start_to_close_timeout=timedelta(seconds=10),
             # schedule_to_start_timeout=timedelta(seconds=10),
             # schedule_to_close_timeout=timedelta(seconds=10),
         )
-        retry_policy_result = await workflow.execute_activity(
+        activity_result = await workflow.execute_activity(
             your_activity,
-            YourParams(greeting, "Retry Policy"),
+            YourParams(greeting, "Retry Policy options"),
             start_to_close_timeout=timedelta(seconds=10),
             # Retry Policy
             retry_policy=RetryPolicy(
@@ -46,7 +46,7 @@ class YourWorkflow:
                 # non_retryable_error_types=["ValueError"],
             ),
         )
-        return activity_timeout_result, retry_policy_result
+        return activity_timeout_result, activity_result
 
 
 """ @dacx

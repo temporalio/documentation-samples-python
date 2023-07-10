@@ -2,7 +2,7 @@ import asyncio
 
 from temporalio.client import Client
 
-from your_workflow import LoopingWorkflow
+from your_workflow import CronWorkflow
 
 """dacx
 You can set each Workflow to repeat on a schedule with the `cron_schedule` option from either the [`start_workflow()`](https://python.temporal.io/temporalio.client.Client.html#start_workflow) or [`execute_workflow()`](https://python.temporal.io/temporalio.client.Client.html#execute_workflow) asynchronous methods.
@@ -13,8 +13,7 @@ async def main():
     client = await Client.connect("localhost:7233")
 
     result = await client.execute_workflow(
-        LoopingWorkflow.run,
-        0,
+        CronWorkflow.run,
         id="your-workflow-id",
         task_queue="your-task-queue",
         cron_schedule="* * * * *",

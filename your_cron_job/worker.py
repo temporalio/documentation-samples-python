@@ -3,7 +3,7 @@ import asyncio
 from temporalio.client import Client
 from temporalio.worker import Worker
 
-from your_workflow import LoopingWorkflow
+from your_workflow import CronWorkflow
 
 
 async def main():
@@ -11,7 +11,7 @@ async def main():
     worker = Worker(
         client,
         task_queue="your-task-queue",
-        workflows=[LoopingWorkflow],
+        workflows=[CronWorkflow],
     )
     await worker.run()
 

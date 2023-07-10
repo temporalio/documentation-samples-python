@@ -4,10 +4,7 @@ from temporalio import workflow
 
 
 @workflow.defn
-class LoopingWorkflow:
+class CronWorkflow:
     @workflow.run
-    async def run(self, iteration: int) -> None:
-        if iteration == 5:
-            return
-        await asyncio.sleep(10)
-        workflow.continue_as_new(iteration + 1)
+    async def run(self) -> None:
+        print("Hello World")
