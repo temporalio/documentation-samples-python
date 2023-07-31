@@ -35,5 +35,7 @@ id: how-to-patch-a-workflow-definition-in-python
 title: How to Patch a Workflow Definition in Python
 label: Patch a Workflow Definition
 description: Set the patched() function on the Workflow.
+tags:
+ - version
 lines: 3, 13-21
 @dacx """

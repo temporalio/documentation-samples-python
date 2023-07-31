@@ -43,6 +43,8 @@ id: how-to-spawn-a-child-workflow-execution-in-python
 title: How to spawn a Child Workflow Execution in Python
 label: Child Workflow Execution
 description: To spawn a Child Workflow Execution in Python use the execute_child_workflow() function which starts the Child Workflow and waits for completion or use the start_child_workflow() function to start a Child Workflow and return its handle.
+tags:
+ - child workflow
 lines: 5-15, 22-36, 38
 @dacx """
 
@@ -51,5 +53,7 @@ id: how-to-set-a-parent-close-policy-in-python
 title: How to set a Parent Close Policy in Python
 label: Parent Close Policy
 description: Create an instance of the `ParentClosePolicy` class.
+tags:
+ - parent close policy
 lines: 3, 17-19, 22-38
 @dacx """

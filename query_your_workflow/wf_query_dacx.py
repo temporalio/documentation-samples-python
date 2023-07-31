@@ -42,5 +42,8 @@ id: how-to-define-a-query-in-python
 title: How to define a Query in Python
 label: Define a Query
 description: Use the `@workflow.query` decorator to define a Query.
+tags:
+ - query
+ - workflow
 lines: 5-17, 31-33
 @dacx """

@@ -45,6 +45,9 @@ id: how-to-handle-a-signal-in-a-workflow-in-python
 title: How to handle a Signal in Python
 label: Handle a Signal
 description: Set the Signal on the Workflow Handle.
+tags:
+ - signal
+ - workflow
 lines: 3, 6-10, 30
 @dacx """
 
@@ -54,5 +57,9 @@ id: how-to-send-a-signal-from-a-client-in-python
 title: How to send a Signal from a Client in Python
 label: Send a Signal from a Client
 description: To send a Signal to a Workflow Execution from Client code, use the signal() method on the Workflow handle.
+tags:
+ - signal
+ - workflow
+ - client
 lines: 3, 12-20, 24-30
 @dacx """

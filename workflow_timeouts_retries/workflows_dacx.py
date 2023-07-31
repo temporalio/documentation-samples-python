@@ -53,6 +53,8 @@ id: how-to-set-workflow-timeouts-in-python
 title: How to set Workflow Timeouts in Python
 label: Workflow Timeouts
 description: Set the timeout to either start_workflow() or execute_workflow().
+tags:
+ - timeout
 lines: 7-15, 25-34
 @dacx """
 
@@ -61,5 +63,7 @@ id: how-to-set-workflow-retry-options-in-python
 title: How to set Workflow Retry Options in Python
 label: Workflow Retry Options
 description: Set the Retry Policy to either start_workflow() or execute_workflow().
+tags:
+ - retry policy
 lines: 17-19, 35-41
 @dacx """

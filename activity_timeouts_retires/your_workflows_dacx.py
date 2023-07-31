@@ -54,6 +54,9 @@ id: how-to-set-activity-timeouts-in-python
 title: How to set Activity Timeouts in Python
 label: Set Activity Timeouts
 description: Set Activity timeouts from within your Workflow Definition.
+tags:
+ - activity
+ - timeout
 lines: 9-17, 28-35
 @dacx """
 
@@ -62,5 +65,8 @@ id: how-to-set-an-activity-retry-policy-in-python
 title: How to set an Activity Retry Policy in Python
 label: Retry Policy
 description: Create an instance of an Activity Retry Policy in Python.
+tags:
+ - activity
+ - retry policy
 lines: 19-21, 4, 36-48
 @dacx """
