@@ -29,6 +29,9 @@ id: how-to-upsert-custom-search-attributes-to-a-workflow-executions-during-execu
 title: How to upsert custom Search Attributes
 label: Upsert custom Search Attributes
 description: To upsert custom Search Attributes, use the upsert_search_attributes() method.
+tags:
+ - python
+ - search attribute
 lines: 5-9, 22
 @dacx """
 
@@ -38,5 +41,7 @@ id: how-to-remove-search-attributes-from-a-workflow-in-python
 title: How to remove Search Attributes in Python
 label: Remove Search Attributes
 description: To remove a Search Attribute, use `upsert_search_attributes()` with an empty list as its value.
+tags:
+ - search attribute
 lines: 11-13, 24
 @dacx """

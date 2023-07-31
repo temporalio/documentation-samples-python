@@ -86,6 +86,8 @@ id: how-to-define-workflow-return-values-in-python
 title: How to define Workflow return values
 label: Define Workflow return values
 description: Define Workflow return values.
+tags:
+ - workflow return values
 lines: 3, 32-36, 47-55
 @dacx """
 
@@ -95,5 +97,7 @@ id: how-to-get-the-result-of-an-activity-execution-in-python
 title: How to get the result of an Activity Execution in Python
 label: Get the result of an Activity Execution
 description: Get the result of an Activity Execution.
+tags:
+ - activity execution
 lines: 3, 38-44, 47-55
 @dacx """

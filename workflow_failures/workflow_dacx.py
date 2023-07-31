@@ -62,5 +62,8 @@ id: how-to-cancel-a-workflow-execution-in-python
 title: How to Cancel a Workflow Execution in Python
 label: Cancel a Workflow Execution
 description: Cancel a Workflow Execution with Retry Policies.
+tags:
+ - workflow execution
+ - retry policy
 lines: 4, 9-12. 15-31
 @dacx """

@@ -26,6 +26,8 @@ id: how-to-continue-as-new-in-python
 title: How to Continue-As-New in Python
 label: Continue-As-New
 description: To Continue-As-New in Python, call the continue_as_new() function from inside your Workflow, which will stop the Workflow immediately and Continue-As-New.
+tags:
+ - continue-as-new
 lines: 5-7, 14-21
 @dacx """
 
@@ -34,5 +36,8 @@ id: how-to-set-timers-in-python
 title: How to set Timers in Python
 label: Timers
 description: To set a Timer in Python, call the asyncio.sleep() function and pass the duration in seconds you want to wait before continuing.
+tags:
+ - timer
+ - sleep
 lines: 9-11, 20
 @dacx """

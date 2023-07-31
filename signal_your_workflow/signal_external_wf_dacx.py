@@ -43,5 +43,8 @@ id: how-to-send-a-signal-from-a-workflow-in-python
 title: How to Send a Signal from a Workflow in Python
 label: Signal
 description: Use `get_external_workflow_handle_for` to get a typed Workflow handle to an existing Workflow by its identifier.
+tags:
+ - signal
+ - workflow
 lines: 6-15, 33-38
 @dacx """

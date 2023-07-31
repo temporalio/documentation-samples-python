@@ -29,5 +29,7 @@ id: how-to-mark-a-workflow-definition-as-deprecated-in-python
 title: How to mark a Workflow Definition as deprecated in Python
 label: Mark a Workflow Definition as deprecated
 description: Set the deprecated_patch() function on the Workflow.
+tags:
+ - version
 lines: 3, 12-20
 @dacx """
