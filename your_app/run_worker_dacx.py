@@ -36,6 +36,8 @@ id: how-to-develop-a-worker-program-in-python
 title: How to develop a Worker Program in Python
 label: Worker Program
 description: Create a new instance of a Worker.
+tags:
+ - worker
 lines: 3-4, 8-12, 19-31
 @dacx """
 
@@ -44,5 +46,7 @@ id: how-to-register-types-with-a-worker-in-python
 title: How to register types with a Worker in Python
 label: Register types with a Worker
 description: Register types with a Worker.
+tags:
+ - worker
 lines: 14-16, 19-31
 @dacx """
