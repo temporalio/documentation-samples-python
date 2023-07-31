@@ -38,5 +38,7 @@ tags:
  - python
  - workflow
  - logging
+ - python sdk
+ - code sample
 lines: 3-14, 24
 @dacx """

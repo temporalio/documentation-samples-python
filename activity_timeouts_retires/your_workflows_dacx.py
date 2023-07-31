@@ -57,6 +57,8 @@ description: Set Activity timeouts from within your Workflow Definition.
 tags:
  - activity
  - timeout
+ - python sdk
+ - code sample
 lines: 9-17, 28-35
 @dacx """
 
@@ -68,5 +70,7 @@ description: Create an instance of an Activity Retry Policy in Python.
 tags:
  - activity
  - retry policy
+ - python sdk
+ - code sample
 lines: 19-21, 4, 36-48
 @dacx """

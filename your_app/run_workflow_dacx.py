@@ -47,6 +47,8 @@ description: Connect a Temporal Client to a Cluster in the Python SDK.
 tags:
  - temporal client
  - cluster
+ - python sdk
+ - code sample
 lines: 6-8, 25-39
 @dacx """
 
@@ -57,6 +59,8 @@ label: Start a Workflow Execution
 description: Start a Workflow Execution in the Python SDK.
 tags:
  - workflow execution
+ - python sdk
+ - code sample
 lines: 10-12, 25-39
 @dacx """
 
@@ -68,6 +72,8 @@ label: Set a Workflow Id
 description: Set a Workflow Id
 tags:
  - workflow
+ - python sdk
+ - code sample
 lines: 14-18, 25-39
 @dacx """
 
@@ -79,5 +85,7 @@ description: Task Queue
 tags:
  - task queue
  - workflow execution
+ - python sdk
+ - code sample
 lines: 20-22, 25-39
 @dacx """

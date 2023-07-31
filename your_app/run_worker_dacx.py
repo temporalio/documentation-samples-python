@@ -38,6 +38,8 @@ label: Worker Program
 description: Create a new instance of a Worker.
 tags:
  - worker
+ - python sdk
+ - code sample
 lines: 3-4, 8-12, 19-31
 @dacx """
 
@@ -48,5 +50,7 @@ label: Register types with a Worker
 description: Register types with a Worker.
 tags:
  - worker
+ - python sdk
+ - code sample
 lines: 14-16, 19-31
 @dacx """

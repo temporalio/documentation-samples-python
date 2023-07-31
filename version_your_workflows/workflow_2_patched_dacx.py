@@ -37,5 +37,7 @@ label: Patch a Workflow Definition
 description: Set the patched() function on the Workflow.
 tags:
  - version
+ - python sdk
+ - code sample
 lines: 3, 13-21
 @dacx """

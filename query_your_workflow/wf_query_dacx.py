@@ -45,5 +45,7 @@ description: Use the `@workflow.query` decorator to define a Query.
 tags:
  - query
  - workflow
+ - python sdk
+ - code sample
 lines: 5-17, 31-33
 @dacx """

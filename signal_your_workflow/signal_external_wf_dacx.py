@@ -46,5 +46,7 @@ description: Use `get_external_workflow_handle_for` to get a typed Workflow hand
 tags:
  - signal
  - workflow
+ - python sdk
+ - code sample
 lines: 6-15, 33-38
 @dacx """

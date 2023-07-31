@@ -61,5 +61,7 @@ tags:
  - signal
  - workflow
  - client
+ - python sdk
+ - code sample
 lines: 3, 12-20, 24-30
 @dacx """

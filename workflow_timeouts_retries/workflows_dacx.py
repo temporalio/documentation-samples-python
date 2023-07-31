@@ -55,6 +55,8 @@ label: Workflow Timeouts
 description: Set the timeout to either start_workflow() or execute_workflow().
 tags:
  - timeout
+ - python sdk
+ - code sample
 lines: 7-15, 25-34
 @dacx """
 
@@ -65,5 +67,7 @@ label: Workflow Retry Options
 description: Set the Retry Policy to either start_workflow() or execute_workflow().
 tags:
  - retry policy
+ - python sdk
+ - code sample
 lines: 17-19, 35-41
 @dacx """

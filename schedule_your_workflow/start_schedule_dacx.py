@@ -53,5 +53,7 @@ description: Schedule a Workflow Execution in the Python SDK.
 tags:
  - scheduled workflow execution
  - schedules
+ - python sdk
+ - code sample
 lines: 14-21, 24-41
 @dacx """

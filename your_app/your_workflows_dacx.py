@@ -99,5 +99,7 @@ label: Get the result of an Activity Execution
 description: Get the result of an Activity Execution.
 tags:
  - activity execution
+ - python sdk
+ - code sample
 lines: 3, 38-44, 47-55
 @dacx """

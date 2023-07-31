@@ -44,6 +44,8 @@ description: To send a Query to a Workflow, use the `query` method from the `Wor
 tags:
  - query
  - workflow
+ - python sdk
+ - code sample
 lines: 6-9, 24
 @dacx """
 

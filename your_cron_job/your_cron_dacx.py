@@ -33,5 +33,7 @@ description: You can set each Workflow to repeat on a schedule with the cron_sch
 tags:
  - schedule
  - cron
+ - python sdk
+ - code sample
 lines: 7-9, 15-21
 @dacx """

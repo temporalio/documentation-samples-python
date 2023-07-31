@@ -34,5 +34,7 @@ label: Workflow Execution result
 description: Workflow Execution result.
 tags:
  - workflow execution
+ - python sdk
+ - code sample
 lines: 5-13, 16-27
 @dacx """

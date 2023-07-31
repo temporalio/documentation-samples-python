@@ -61,5 +61,7 @@ label: Define a Signal
 description: Use the `@workflow.signal` decorator to define a Signal.
 tags:
  - signal
+ - python sdk
+ - code sample
 lines: 4, 6-21, 44-49, 52-54
 @dacx """

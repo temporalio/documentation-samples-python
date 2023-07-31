@@ -30,5 +30,7 @@ description: Use the `describe()` asynchronous method on the Schedule Handler.
 tags:
  - scheduled workflow execution
  - schedules
+ - python sdk
+ - code sample
 lines: 5-8, 11-19
 @dacx """

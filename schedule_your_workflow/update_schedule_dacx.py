@@ -42,5 +42,7 @@ description: Create a function that takes `ScheduleUpdateInput` and returns `Sch
 tags:
  - scheduled workflow execution
  - schedules
+ - python sdk
+ - code sample
 lines: 10-14, 23-28
 @dacx """

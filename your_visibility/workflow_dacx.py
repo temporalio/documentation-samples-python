@@ -32,6 +32,8 @@ description: To upsert custom Search Attributes, use the upsert_search_attribute
 tags:
  - python
  - search attribute
+ - python sdk
+ - code sample
 lines: 5-9, 22
 @dacx """
 
@@ -43,5 +45,7 @@ label: Remove Search Attributes
 description: To remove a Search Attribute, use `upsert_search_attributes()` with an empty list as its value.
 tags:
  - search attribute
+ - python sdk
+ - code sample
 lines: 11-13, 24
 @dacx """

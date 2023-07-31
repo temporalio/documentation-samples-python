@@ -27,5 +27,7 @@ description: Trigger a Scheduled Workflow Execution in the Python SDK.
 tags:
  - scheduled workflow execution
  - schedules
+ - python sdk
+ - code sample
 lines: 5-7, 10-16
 @dacx """

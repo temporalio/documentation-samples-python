@@ -52,6 +52,8 @@ description: To list Workflows from the Client, use the [list_workflows()](https
 tags:
  - workflow
  - client
+ - python sdk
+ - code sample
 lines: 11-13, 40-41
 @dacx """
 
@@ -63,5 +65,7 @@ label: Set custom Search Attributes
 description: To set custom Search Attributes, use the `search_attributes` parameter of 'start_workflow()'.
 tags:
  - search attribute
+ - python sdk
+ - code sample
 lines: 7-9, 18-23
 @dacx """

@@ -20,5 +20,7 @@ label: Define Workflow parameters
 description: Define Workflow parameters.
 tags:
  - workflow parameters
+ - python sdk
+ - code sample
 lines: 1, 3-7, 10-13
 @dacx """

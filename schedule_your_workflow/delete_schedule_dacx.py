@@ -27,5 +27,7 @@ description: Use the `delete()` asynchronous method on the Schedule Handler.
 tags:
  - scheduled workflow execution
  - schedules
+ - python sdk
+ - code sample
 lines: 5-16
 @dacx """
