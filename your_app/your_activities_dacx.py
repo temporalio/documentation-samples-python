@@ -35,7 +35,7 @@ title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: You can develop an Activity Definition by using the `@activity.defn` decorator.
 tags:
- = python sdk
+ - python sdk
  - code sample
  - activity definition
 lines: 1, 4-7, 27-29
