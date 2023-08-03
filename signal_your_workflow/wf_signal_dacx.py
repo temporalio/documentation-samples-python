@@ -59,9 +59,6 @@ id: how-to-define-a-signal-in-python
 title: How to define a Signal in Python
 label: Define a Signal
 description: Use the `@workflow.signal` decorator to define a Signal.
-tags:
- - signal
- - python sdk
- - code sample
+tags: signal, python sdk, code sample
 lines: 4, 6-21, 44-49, 52-54
 @dacx """

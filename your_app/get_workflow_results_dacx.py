@@ -32,9 +32,6 @@ id: how-to-get-the-result-of-a-workflow-execution-in-python
 title: How to get the result of a Workflow Execution in Python
 label: Workflow Execution result
 description: Workflow Execution result.
-tags:
- - workflow execution
- - python sdk
- - code sample
+tags: workflow execution, python sdk, code sample
 lines: 5-13, 16-27
 @dacx """

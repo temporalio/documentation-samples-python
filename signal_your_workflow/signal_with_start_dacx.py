@@ -33,10 +33,6 @@ id: how-to-send-a-signal-with-start-in-python
 title: How to send a Signal-With-Start in Python
 label: Signal-With-Start
 description: To Signal-With-Start use the `start_workflow()` method and pass the `start_signal` argument with the name of your Signal.
-tags:
- - signal
- - signal with start
- - python sdk
- - code sample
+tags: signal, signal with start, python sdk, code sample
 lines: 3, 6-8, 11-19
 @dacx """

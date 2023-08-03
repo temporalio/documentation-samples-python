@@ -18,9 +18,6 @@ id: how-to-define-workflow-parameters-in-python
 title: How to define Workflow parameters
 label: Define Workflow parameters
 description: Define Workflow parameters.
-tags:
- - workflow parameters
- - python sdk
- - code sample
+tags: workflow parameters, python sdk, code sample
 lines: 1, 3-7, 10-13
 @dacx """

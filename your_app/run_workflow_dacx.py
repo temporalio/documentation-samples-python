@@ -44,11 +44,7 @@ id: how-to-connect-to-a-cluster-in-python
 title: How to connect to a Temporal Cluster in Python
 label: Connect a Temporal Client
 description: Connect a Temporal Client to a Cluster in the Python SDK.
-tags:
- - temporal client
- - cluster
- - python sdk
- - code sample
+tags: temporal client, cluster, python sdk, code sample
 lines: 6-8, 25-39
 @dacx """
 
@@ -57,10 +53,7 @@ id: how-to-spawn-a-workflow-execution-in-python
 title: How to start a Workflow Execution in Python
 label: Start a Workflow Execution
 description: Start a Workflow Execution in the Python SDK.
-tags:
- - workflow execution
- - python sdk
- - code sample
+tags: python sdk, code sample, workflow execution
 lines: 10-12, 25-39
 @dacx """
 
@@ -70,10 +63,7 @@ id: how-to-set-a-workflow-id-in-python
 title: How to set a Workflow Id in Python
 label: Set a Workflow Id
 description: Set a Workflow Id
-tags:
- - workflow
- - python sdk
- - code sample
+tags: workflow, python sdk, code sample
 lines: 14-18, 25-39
 @dacx """
 
@@ -82,10 +72,6 @@ id: how-to-set-a-workflow-task-queue-in-python
 title: How to set the Task Queue for Workflow Execution in Python
 label: Set the Task Queue for Workflow Execution
 description: Task Queue
-tags:
- - task queue
- - workflow execution
- - python sdk
- - code sample
+tags: task queue, workflow execution, python sdk, code sample
 lines: 20-22, 25-39
 @dacx """

@@ -44,9 +44,6 @@ id: how-to-connect-to-temporal-cloud-in-python
 title: How to connect to Temporal Cloud
 label: Connect to Temporal Cloud
 description: Use a certificate key pair and your Temporal Cloud Namespace to connect to Temporal Cloud.
-tags:
- - temporal cloud
- - python sdk
- - code sample
+tags: temporal cloud, python sdk, code sample
 lines: 3, 6-10, 13-27
 @dacx """

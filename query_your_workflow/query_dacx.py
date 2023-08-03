@@ -41,11 +41,7 @@ id: how-to-handle-a-query-in-a-workflow-in-python
 title: How to handle a Query in a Workflow
 label: Handle a Query in a Workflow
 description: To send a Query to a Workflow, use the `query` method from the `WorkflowHandle` class.
-tags:
- - query
- - workflow
- - python sdk
- - code sample
+tags: query, workflow, python sdk, code sample
 lines: 6-9, 24
 @dacx """
 
@@ -54,5 +50,6 @@ id: how-to-send-a-query-to-a-workflow-execution-in-python
 title: How to send a Query to a Workflow Execution in Python
 label: Sending Queries
 description: Use the `query` method to send a Query.
+tags: query, workflow, python sdk, code sample
 lines: 10-12, 24
 @dacx """

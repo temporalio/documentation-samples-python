@@ -23,10 +23,6 @@ id: how-to-list-scheduled-workflow-executions-in-python
 title: How to list Scheduled Workflow Executions in Python
 label: List Scheduled Workflow Executions
 description: Use `list_schedules()` on the Client to list all Workflow Execution in the Python SDK.
-tags:
- - scheduled workflow execution
- - schedules
- - python sdk
- - code sample
+tags: scheduled workflow execution, schedules, python sdk, code sample
 lines: 5-8, 11-14
 @dacx """

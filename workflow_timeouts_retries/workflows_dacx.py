@@ -53,7 +53,7 @@ id: how-to-set-workflow-timeouts-in-python
 title: How to set Workflow Timeouts in Python
 label: Workflow Timeouts
 description: Set the timeout to either start_workflow() or execute_workflow().
-tags:
+tags: `execution_timeout`, `run_timeout`, `task_timeout`, timeout, python sdk, code sample, retry policy, python sdk, code sample
  - timeout
  - python sdk
  - code sample
@@ -65,7 +65,7 @@ id: how-to-set-workflow-retry-options-in-python
 title: How to set Workflow Retry Options in Python
 label: Workflow Retry Options
 description: Set the Retry Policy to either start_workflow() or execute_workflow().
-tags:
+tags: `execution_timeout`, `run_timeout`, `task_timeout`, timeout, python sdk, code sample, retry policy, python sdk, code sample
  - retry policy
  - python sdk
  - code sample

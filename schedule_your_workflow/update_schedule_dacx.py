@@ -39,10 +39,6 @@ id: how-to-update-scheduled-workflow-execution-in-python
 title: How to update a Scheduled Workflow Execution in Python
 label: Update a Scheduled Workflow Execution
 description: Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
-tags:
- - scheduled workflow execution
- - schedules
- - python sdk
- - code sample
+tags: scheduled workflow execution, schedules, python sdk, code sample
 lines: 10-14, 23-28
 @dacx """

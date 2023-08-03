@@ -27,10 +27,6 @@ id: how-to-describe-a-scheduled-workflow-execution-in-python
 title: How to describe a Scheduled Workflow Execution in Python
 label: Describe a Scheduled Workflow Execution
 description: Use the `describe()` asynchronous method on the Schedule Handler.
-tags:
- - scheduled workflow execution
- - schedules
- - python sdk
- - code sample
+tags: scheduled workflow execution, schedules, python sdk, code sample
 lines: 5-8, 11-19
 @dacx """

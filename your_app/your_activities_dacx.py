@@ -34,10 +34,7 @@ id: how-to-develop-an-activity-definition-in-python
 title: How to develop an Activity Definition in Python
 label: Activity Definition
 description: You can develop an Activity Definition by using the `@activity.defn` decorator.
-tags:
- = python sdk
- - code sample
- - activity definition
+tags: code sample, activity definition, python sdk
 lines: 1, 4-7, 27-29
 @dacx """
 
@@ -46,10 +43,7 @@ id: how-to-define-activity-parameters-in-python
 title: How to do define Activity parameters in Python
 label: Activity parameters
 description: Activity parameters are the function parameters of the function decorated with `@activity.defn`.
-tags:
- - activity execution
- - python sdk
- - code sample
+tags: activity definition, python sdk, code sample
 lines: 1-3, 9-13, 27-29
 @dacx """
 
@@ -58,10 +52,7 @@ id: how-to-define-activity-return-values-in-python
 title: How to define Activity return values in Python
 label: Activity return values
 description: To return a value of the Workflow, use `return` to return an object.
-tags:
- - activity execution
- - python sdk
- - code sample
+tags: activity execution, python sdk, code sample
 lines: 15-19, 27-29
 @dacx """
 
@@ -70,9 +61,6 @@ id: how-to-customize-activity-type-in-python
 title: How to customize Activity Type in Python
 label: Customize Activity Type
 description: Customize your Activity Type.
-tags:
- - activity execution
- - python sdk
- - code sample
+tags: activity execution, python sdk, code sample
 lines: 21-24, 27-29
 @dacx """

@@ -50,10 +50,6 @@ id: how-to-schedule-a-workflow-execution-in-python
 title: How to Schedule a Workflow Execution in Python
 label: Schedule a Workflow Execution
 description: Schedule a Workflow Execution in the Python SDK.
-tags:
- - scheduled workflow execution
- - schedules
- - python sdk
- - code sample
+tags: scheduled workflow execution, schedules, python sdk, code sample
 lines: 14-21, 24-41
 @dacx """

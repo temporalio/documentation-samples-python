@@ -30,10 +30,6 @@ id: how-to-set-a-cron-schedule-in-python
 title: How to set a Cron Schedule in Python
 label: Cron Schedule
 description: You can set each Workflow to repeat on a schedule with the cron_schedule option from either the start_workflow() or execute_workflow() asynchronous methods.
-tags:
- - schedule
- - cron
- - python sdk
- - code sample
+tags: schedule, cron, python sdk, code sample
 lines: 7-9, 15-21
 @dacx """
