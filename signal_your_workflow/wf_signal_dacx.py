@@ -10,14 +10,14 @@ A Signal has a name and can have arguments.
 - The arguments must be serializable.
 To define a Signal, set the Signal decorator [`@workflow.signal`](https://python.temporal.io/temporalio.workflow.html#signal) on the Signal function inside your Workflow.
 
-**Customize name**
-
 Non-dynamic methods can only have positional arguments.
 Temporal suggests taking a single argument that is an object or data class of fields that can be added to as needed.
 
 Return values from Signal methods are ignored.
 
-You can have a name parameter to customize the Signal's name, otherwise it defaults to the unqualified method `__name__`.
+**Customize names**
+
+You can have a name parameter to customize the Signal's name, otherwise it defaults to the name of the signal method.
 dacx"""
 
 
