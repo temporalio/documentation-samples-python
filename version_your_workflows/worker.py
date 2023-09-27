@@ -18,13 +18,13 @@ async def main():
     )
     args = parser.parse_args()
     if args.workflow == "initial":
-        from workflow_1_initial import MyWorkflow
+        from version_your_workflows.workflow_1_initial_dacx import MyWorkflow
     elif args.workflow == "patched":
         from workflow_2_patched import MyWorkflow  # type: ignore
     elif args.workflow == "patch-deprecated":
         from workflow_3_patch_deprecated import MyWorkflow  # type: ignore
     elif args.workflow == "patch-complete":
-        from workflow_4_patch_complete import MyWorkflow  # type: ignore
+        from version_your_workflows.workflow_4_patch_complete_dacx import MyWorkflow  # type: ignore
     else:
         raise RuntimeError("Unrecognized workflow")
 
