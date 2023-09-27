@@ -10,7 +10,7 @@ Now, you want to update your code to run `post_patch_activity` instead. This rep
 dacx"""
 
 """dacx
-**Problem: You cannot deploy `post_patch_activity` directly until you're certain there are no more running Workflows created using the `pre_patch_activity` code.**
+**Problem: You cannot deploy `post_patch_activity` directly until you're certain there are no more running Workflows created using the `pre_patch_activity` code, otherwise you are likely to cause a non-deterministic error.**
 
 Instead, you'll need to deploy `post_patched_activity` and use the [patched](https://python.temporal.io/temporalio.workflow.html#patched) function to determine which version of the code to execute.
 
