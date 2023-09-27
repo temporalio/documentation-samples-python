@@ -31,7 +31,7 @@ class MyWorkflow:
 
 """ @dacx
 id: understanding-deprecated-patches-in-python-sdk
-title: Understanding Deprecated Patches in the Python SDK
+title: Understanding deprecated Patches in the Python SDK
 label: Deprecated Patches
 description: An overview of deprecated patches in the Python SDK, detailing their role in ensuring smooth transitions between workflow versions and preventing replay failures.
 tags:

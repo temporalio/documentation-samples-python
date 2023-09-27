@@ -42,7 +42,7 @@ class MyWorkflow:
 
 """ @dacx
 id: how-to-use-the-python-sdk-patching-api-final-in-python
-title: Review the final Python SDK patching API implementation
+title: Review the final Python SDK Patching API implementation
 label: Final Python SDK patching API implementation
 description: Heres a sample implementation of the final patching in new code using the Python SDK's patching API.
 tags:
@@ -54,8 +54,8 @@ lines: 8-10, 1-6, 29-38
 
 """ @dacx
 id: addressing-deployment-challenges-with-python-sdk-patching-api
-title: Addressing Deployment Challenges with the Python SDK Patching API
-label: Deployment Challenges & Solutions
+title: Addressing deployment challenges with the Patching API
+label: Deployment challenges and solutions
 description: A guide on how to handle deployment challenges using the Python SDK's patching API, ensuring seamless transitions between old and new code versions.
 tags:
  - deployment
