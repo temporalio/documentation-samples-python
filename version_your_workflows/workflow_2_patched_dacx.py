@@ -36,8 +36,8 @@ class MyWorkflow:
 
 """ @dacx
 id: patch-in-new-code
-title:Patching in New Code with the Python SDK
-label: Using `patched` for Workflow History Markers
+title: Patching in New Code with the Python SDK
+label: Using patched for Workflow History Markers
 description: An introduction to the `patched` function in the Python SDK, which inserts a marker into the Workflow History to ensure safe deployment of new code versions.
 tags:
  - patching

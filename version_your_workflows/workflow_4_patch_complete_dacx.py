@@ -67,9 +67,9 @@ lines: 12-22, 29-36
 
 """ @dacx
 id: deploying-post-patch-activity-safely
-title: Safe Deployment of `post_patch_activity`
+title: Safe Deployment of post_patch_activity
 label: Deploy new code
-description: Guidelines for safely deploying `post_patch_activity` by ensuring that all related Workflows are completed.
+description: Guidelines for safely deploying post_patch_activity by ensuring that all related Workflows are completed.
 tags:
  - deployment safety
  - python sdk
