@@ -4,9 +4,13 @@ from temporalio import workflow
 
 with workflow.unsafe.imports_passed_through():
     from activities import post_patch_activity, pre_patch_activity
+
 """dacx
-To patch a Workflow, you must set the [patched()](https://docs.temporal.io/docs/python/workflows#patched) function on the Workflow and pass an identifier for the patch.
-The code cannot be replaying.
+Using `patched` inserts a marker into the Workflow History.
+
+![image](https://user-images.githubusercontent.com/6764957/139673361-35d61b38-ab94-401e-ae7b-feaa52eae8c6.png)
+
+During replay, if a Worker encounters a history with that marker, it will fail the Workflow task when the Workflow code doesn't produce the same patch marker (in this case, `my-patch`). This ensures you can safely deploy code from `post_patch_activity` as a "feature flag" alongside the original version (`pre_patch_activity`).
 dacx"""
 
 
@@ -31,13 +35,14 @@ class MyWorkflow:
 
 
 """ @dacx
-id: how-to-patch-a-workflow-definition-in-python
-title: How to Patch a Workflow Definition in Python
-label: Patch a Workflow Definition
-description: Set the patched() function on the Workflow.
+id: patch-in-new-code
+title:Patching in New Code with the Python SDK
+label: Using `patched` for Workflow History Markers
+description: An introduction to the `patched` function in the Python SDK, which inserts a marker into the Workflow History to ensure safe deployment of new code versions.
 tags:
- - version
+ - patching
  - python sdk
- - code sample
-lines: 3, 13-21
+ - workflow history
+ - best practices
+lines: 8-14, 17-30
 @dacx """
