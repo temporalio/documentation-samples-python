@@ -43,5 +43,5 @@ tags:
  - version
  - python sdk
  - code sample
-lines: 8-20, 1-6, 23-34
+lines: 8-20, 1-6, 23-30
 @dacx """
