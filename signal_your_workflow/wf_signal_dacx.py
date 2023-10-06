@@ -17,7 +17,7 @@ Return values from Signal methods are ignored.
 
 **Customize names**
 
-You can have a name parameter to customize the Signal's name, otherwise it defaults to the name of the signal method.
+You can have a name parameter to customize the Signal's name, otherwise it defaults to the name of the Signal method.
 dacx"""
 
 
