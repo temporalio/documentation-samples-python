@@ -7,7 +7,7 @@ To define a Query, set the Query decorator [`@workflow.query`](https://python.te
 
 **Customize names**
 
-You can have a name parameter to customize the Query's name, otherwise it defaults to the unqualified method `__name__`.
+You can have a name parameter to customize the Query's name, otherwise it defaults to the name of the Query method.
 
 :::note
 
