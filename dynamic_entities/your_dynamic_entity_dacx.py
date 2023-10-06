@@ -9,7 +9,7 @@ from temporalio.common import RawValue
 from temporalio.worker import Worker
 
 """dacx
-A Workflow can be made dynamic by adding dynamic=True to the `@workflow.defn` decorator.
+A Workflow can be made dynamic by adding `dynamic=True` to the `@workflow.defn` decorator.
 The Workflow's run method must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
 At runtime, the Workflow will be invoked if no Workflow with the given name is registered.
 The input arguments are passed to the run method as the single `Sequence[RawValue]` argument.
