@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 """ @dacx
 id: how-to-set-a-dynamic-workflow-in-python
-title: How to set a Dynamic Workflow in Python
+title: How to set a Dynamic Workflow
 label: Set a Dynamic Workflow
 description: Use `dynamic=True` on the `@workflow.defn` decorator to make a Workflow dynamic.
 tags:
@@ -136,7 +136,7 @@ lines: 11-16, 66-79, 100-105
 
 """ @dacx
 id: how-to-set-a-dynamic-activity-in-python
-title: How to set a Dynamic Activity in Python
+title: How to set a Dynamic Activity
 label: Set a Dynamic Activity
 description: Use `dynamic=True` on the `@activity.defn` decorator to make an Activity dynamic.
 tags:
@@ -148,7 +148,7 @@ lines: 18-24, 45-47, 72-79
 
 """ @dacx
 id: how-to-set-a-dynamic-signal-in-python
-title: How to set a Dynamic Signal in Python
+title: How to set a Dynamic Signal
 label: Set a Dynamic Signal
 description: Use `dynamic=True` on the `@workflow.signal` decorator to make a Signal dynamic.
 tags:
@@ -160,7 +160,7 @@ lines: 26-30, 81-84, 111
 
 """ @dacx
 id: how-to-set-a-dynamic-query-in-python
-title: How to set a Dynamic Query in Python
+title: How to set a Dynamic Query
 label: Set a Dynamic Query
 description: Use `dynamic=True` on the `@workflow.query` decorator to make a Query dynamic.
 tags:
