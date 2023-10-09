@@ -10,7 +10,7 @@ from temporalio.worker import Worker
 A Dynamic Query in Temporal is a Query that is invoked dynamically at runtime if no other Query with the same name is registered.
 A Query can be made dynamic by adding `dynamic=True` to the `@query.defn` decorator.
 
-The Query function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
+The Query Handler must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
 The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
