@@ -13,7 +13,7 @@ A Dynamic Activity in Temporal is an Activity that is invoked dynamically at run
 An Activity can be made dynamic by adding `dynamic=True` to the `@activity.defn` decorator.
 You must register the Activity with the [Worker](https://python.temporal.io/temporalio.worker.html) before it can be invoked.
 
-The Activity function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
+The Activity Definition must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
 The [payload_converter()](https://python.temporal.io/temporalio.activity.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
@@ -68,7 +68,10 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+"""dacx
 
+
+dacx"""
 """ @dacx
 id: how-to-set-a-dynamic-activity-in-python
 title: How to set a Dynamic Activity

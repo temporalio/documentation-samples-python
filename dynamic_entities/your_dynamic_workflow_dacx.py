@@ -9,11 +9,11 @@ from temporalio.common import RawValue
 from temporalio.worker import Worker
 
 """dacx
-A Dynamic Workflow in Temporal is an Workflow that is invoked dynamically at runtime if no other Workflow with the same name is registered.
+A Dynamic Workflow in Temporal is a Workflow that is invoked dynamically at runtime if no other Workflow with the same name is registered.
 A Workflow can be made dynamic by adding `dynamic=True` to the `@workflow.defn` decorator.
 You must register the Workflow with the [Worker](https://python.temporal.io/temporalio.worker.html) before it can be invoked.
 
-The Workflow function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
+The Workflow Definition must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
 The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
