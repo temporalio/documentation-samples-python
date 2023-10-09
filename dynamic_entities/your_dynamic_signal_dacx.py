@@ -11,7 +11,7 @@ A Dynamic Signal in Temporal is a Signal that is invoked dynamically at runtime 
 A Signal can be made dynamic by adding `dynamic=True` to the `@signal.defn` decorator.
 
 The Signal function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
-The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to a string representation.
+The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
 

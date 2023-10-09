@@ -14,7 +14,7 @@ A Workflow can be made dynamic by adding `dynamic=True` to the `@workflow.defn` 
 You must register the Workflow with the [Worker](https://python.temporal.io/temporalio.worker.html) before it can be invoked.
 
 The Workflow function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
-The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to a string representation.
+The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
 

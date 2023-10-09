@@ -14,7 +14,7 @@ An Activity can be made dynamic by adding `dynamic=True` to the `@activity.defn`
 You must register the Activity with the [Worker](https://python.temporal.io/temporalio.worker.html) before it can be invoked.
 
 The Activity function must then accept a single argument of type `Sequence[temporalio.common.RawValue]`.
-The [payload_converter()](https://python.temporal.io/temporalio.activity.html#payload_converter) function is used to convert a `RawValue` object to a string representation.
+The [payload_converter()](https://python.temporal.io/temporalio.activity.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
 
