@@ -70,5 +70,5 @@ tags:
  - dynamic query
  - python sdk
  - code sample
-lines: 9-15, 50-58
+lines: 9-15, 29-32, 50-58
 @dacx"""
