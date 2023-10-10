@@ -6,7 +6,6 @@ These are unnamed entities that are invoked if no other statically defined entit
 This is a sample project to demonstrate how to use the Dynamic Entities.
 
 
-
 1. Run the following at the root of the directory.
 
 ```bash

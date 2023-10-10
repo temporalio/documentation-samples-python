@@ -19,13 +19,13 @@ class GreetingWorkflow:
         self._greeting = "<no greeting>"
 
     @workflow.run
-    async def run(self, name: str) -> None:
-        self._greeting = f"Hello, {name}!"
+    async def run(self, input: str) -> None:
+        self._greeting = f"Hello, {input}!"
         await asyncio.sleep(2)
-        self._greeting = f"Goodbye, {name}!"
+        self._greeting = f"Goodbye, {input}!"
 
     @workflow.query(dynamic=True)
-    def dynamic_query(self, name: str, args: Sequence[RawValue]) -> str:
+    def dynamic_query(self, input: str, args: Sequence[RawValue]) -> str:
         return self._greeting
 
 

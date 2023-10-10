@@ -5,10 +5,10 @@ from temporalio import workflow
 from temporalio.common import RawValue
 
 """dacx
-A Dynamic Signal in Temporal is a Signal that is invoked dynamically at runtime if no other Signal with the same name is registered.
+A Dynamic Signal in Temporal is a Signal that is invoked dynamically at runtime if no other Signal with the same input is registered.
 A Signal can be made dynamic by adding `dynamic=True` to the `@signal.defn` decorator.
 
-The Signal Handler should accept `self`, a string name, and a `Sequence[temporalio.common.RawValue]`.
+The Signal Handler should accept `self`, a string input, and a `Sequence[temporalio.common.RawValue]`.
 The [payload_converter()](https://python.temporal.io/temporalio.workflow.html#payload_converter) function is used to convert a `RawValue` object to the desired type.
 dacx"""
 
@@ -37,8 +37,8 @@ class GreetingWorkflow:
                 return greetings
 
     @workflow.signal(dynamic=True)
-    async def dynamic_signal(self, name: str, args: Sequence[RawValue]) -> None:
-        await self._pending_greetings.put(name)
+    async def dynamic_signal(self, input: str, args: Sequence[RawValue]) -> None:
+        await self._pending_greetings.put(input)
 
     @workflow.signal
     def exit(self) -> None:
