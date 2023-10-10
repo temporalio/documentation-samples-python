@@ -5,37 +5,100 @@ These are unnamed entities that are invoked if no other statically defined entit
 
 This is a sample project to demonstrate how to use the Dynamic Entities.
 
+
+
 1. Run the following at the root of the directory.
 
 ```bash
 poetry install
 ```
 
-2. Start your Worker and run your Workflow
+## Dynamic Activity
 
-Starts the Worker and runs the Workflow.
+Starts the Worker.
 
 ```bash
-poetry run python your_dynamic_entity_dacx.py
+poetry run python your_worker_activity_dacx.py
 ```
 
-```output
-Current Greeting: Hello
-Result: [RawValue(payload=metadata {
-  key: "messageType"
-  value: "temporal.api.common.v1.Payload"
-}
-metadata {
-  key: "encoding"
-  value: "json/protobuf"
-}
-data: "{\"data\":\"IldvcmxkIg==\",\"metadata\":{\"encoding\":\"anNvbi9wbGFpbg==\"}}"
-)]!
-Final Greeting: metadata {
-  key: "encoding"
-  value: "json/plain"
-}
-data: "[{\"payload\":\"Goodbye\"}]"
+Start your Workflow:
+
+```bash
+temporal workflow execute \
+ --task-queue dynamic-activity-task-queue \
+ --type GreetingWorkflow \
+ --input '"Dynamic Activity argument"'  \
+ --namespace default
 ```
 
-Dynamic Entities provide flexibility to handle cases where the names of Workflows, Activities, Signals, or Queries are not known at run time.
+## Dynamic Query
+
+
+Starts the Worker.
+
+```bash
+poetry run python your_worker_query_dacx.py
+```
+
+Start your Workflow:
+
+```bash
+temporal workflow execute \
+ --task-queue dynamic-query-task-queue \
+ --type GreetingWorkflow \
+ --input '"SomeName"' \
+ --namespace default
+```
+
+## Dynamic Signal
+
+
+Starts the Worker.
+
+```bash
+poetry run python your_worker_signal_dacx.py
+```
+
+Start your Workflow:
+
+```bash
+temporal workflow execute \
+ --task-queue dynamic-signal-task-queue \
+ --type GreetingWorkflow \
+ --namespace default
+```
+
+Signal your Workflow:
+
+```bash
+temporal workflow signal \
+ --workflow-id <your workflow id> \
+ --namespace default \
+ --name "unregister_signal" \
+ --input '"Dynamic Signal argument 1"'
+```
+Complete your Workflow:
+
+```bash
+temporal workflow signal \
+ --workflow-id <your workflow id>c \
+ --namespace default \
+ --name "exit" \
+```
+## Dynamic Workflow
+
+Starts the Worker.
+
+```bash
+poetry run python your_worker_workflow_dacx.py
+```
+
+Start your Workflow:
+
+```bash
+temporal workflow execute \
+ --task-queue dynamic-workflow-task-queue \
+ --type UnRegisterWorkflow \
+ --input '"SomeName"' \
+ --namespace default
+```

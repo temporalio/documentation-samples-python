@@ -1,12 +1,9 @@
-import asyncio
 from dataclasses import dataclass
 from datetime import timedelta
 from typing import Sequence
 
 from temporalio import activity, workflow
-from temporalio.client import Client
 from temporalio.common import RawValue
-from temporalio.worker import Worker
 
 """dacx
 A Dynamic Activity in Temporal is an Activity that is invoked dynamically at runtime if no other Activity with the same name is registered.
@@ -48,30 +45,6 @@ class GreetingWorkflow:
         )
 
 
-async def main():
-    client = await Client.connect("localhost:7233")
-
-    async with Worker(
-        client,
-        task_queue="dynamic-activity-task-queue",
-        workflows=[GreetingWorkflow],
-        activities=[dynamic_greeting],
-    ):
-        result = await client.execute_workflow(
-            GreetingWorkflow.run,
-            "Dynamic Activity argument",
-            id="hello-dynamic-activity-id",
-            task_queue="dynamic-activity-task-queue",
-        )
-        print(f"Result: {result}")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
-"""dacx
-
-
-dacx"""
 """ @dacx
 id: how-to-set-a-dynamic-activity-in-python
 title: How to set a Dynamic Activity
@@ -81,5 +54,5 @@ tags:
  - dynamic activity
  - python sdk
  - code sample
-lines: 11-18, 27-32, 51-66
+lines: 8-15, 24-29, 37-45
 @dacx """

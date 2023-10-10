@@ -1,12 +1,10 @@
-import asyncio
 from dataclasses import dataclass
 from datetime import timedelta
 from typing import Sequence
 
 from temporalio import activity, workflow
-from temporalio.client import Client
 from temporalio.common import RawValue
-from temporalio.worker import Worker
+
 
 """dacx
 A Dynamic Workflow in Temporal is a Workflow that is invoked dynamically at runtime if no other Workflow with the same name is registered.
@@ -41,28 +39,6 @@ class DynamicWorkflow:
         )
 
 
-async def main():
-    client = await Client.connect("localhost:7233")
-    async with Worker(
-        client,
-        task_queue="dynamic-workflow-task-queue",
-        workflows=[DynamicWorkflow],
-        activities=[default_greeting],
-    ):
-
-        result = await client.execute_workflow(
-            "UnregisteredWorkflowType",
-            "Dynamic Workflow argument",
-            id="hello-dynamic-workflow-id",
-            task_queue="dynamic-workflow-task-queue",
-        )
-        print(f"Result: {result}")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
-
-
 """ @dacx
 id: how-to-set-a-dynamic-workflow-in-python
 title: How to set a Dynamic Workflow
@@ -72,5 +48,5 @@ tags:
  - dynamic workflow
  - python sdk
  - code sample
-lines: 11-18, 32-41, 44-59
+lines: 9-16, 30-39
 @dacx """
