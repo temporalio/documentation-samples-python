@@ -1,0 +1,57 @@
+import uuid
+
+import pytest
+
+from temporalio.testing import WorkflowEnvironment
+from temporalio.worker import Worker
+
+from activities import ssn_trace_activity
+from workflows import BackgroundCheck
+
+"""dacx
+Each Temporal SDK has a testing suite that can be used in conjunction with a typical language specific testing framework.
+In the Temporal Python SDK, the testing package (https://python.temporal.io/temporalio.testing.html) provides atest environment in which the Workflow and Activity code may be run for test purposes.
+dacx"""
+
+"""dacx
+The `BackgroundCheck` Workflow code checks the following conditions:
+
+1. It receives a social security number and a unique ID as input parameters.
+2. It starts a new activity `ssn_trace_activity` with the input SSN.
+3. It waits for the activity to complete and returns the result.
+4. If the activity returns "pass", it logs a message indicating that the background check passed.
+5. If the activity returns "fail", it raises an exception indicating that the background check failed.
+
+We can also perform a Workflow Replay test, and we'll provide detailed coverage of this topic in another section.
+dacx"""
+
+
+@pytest.mark.asyncio
+async def test_execute_workflow():
+    task_queue_name = str(uuid.uuid4())
+    async with await WorkflowEnvironment.start_time_skipping() as env:
+        async with Worker(
+            env.client,
+            task_queue=task_queue_name,
+            workflows=[BackgroundCheck],
+            activities=[ssn_trace_activity],
+        ):
+            assert "pass" == await env.client.execute_workflow(
+                BackgroundCheck.run,
+                "555-55-5555",
+                id=str(uuid.uuid4()),
+                task_queue=task_queue_name,
+            )
+
+
+"""dacx
+This is a unit test written in Python using the pytest library.
+
+The test checks the `execute_workflow` method of the `BackgroundCheck` workflow. 
+
+The test creates a new `WorkflowEnvironment` and a `Worker` with a task queue and the `BackgroundCheck` workflow and `ssn_trace_activity` activity. 
+
+Then, it executes the `BackgroundCheck.run` method with a social security number and a unique ID, and asserts that the result is equal to "pass". 
+
+The test is marked with `@pytest.mark.asyncio` to indicate that it is an asynchronous test.
+dacx"""
