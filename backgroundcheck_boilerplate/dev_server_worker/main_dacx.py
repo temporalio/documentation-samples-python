@@ -3,8 +3,8 @@ import asyncio
 from temporalio.client import Client
 from temporalio.worker import Worker
 
-from activities import ssn_trace_activity
-from workflows import BackgroundCheck
+from activities.ssntraceactivity_dacx import ssn_trace_activity
+from workflows.backgroundcheck_dacx import BackgroundCheck
 
 """dacx
 To run a Worker Process with a local development server, define the following steps in code:

@@ -1,6 +1,6 @@
 import pytest
 from temporalio.testing import ActivityEnvironment
-from activities import ssn_trace_activity
+from activities.ssntraceactivity_dacx import ssn_trace_activity
 
 
 """dacx

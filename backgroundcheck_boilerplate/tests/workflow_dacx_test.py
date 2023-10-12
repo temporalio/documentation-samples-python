@@ -5,8 +5,8 @@ import pytest
 from temporalio.testing import WorkflowEnvironment
 from temporalio.worker import Worker
 
-from activities import ssn_trace_activity
-from workflows import BackgroundCheck
+from activities.ssntraceactivity_dacx import ssn_trace_activity
+from workflows.backgroundcheck_dacx import BackgroundCheck
 
 """dacx
 Each Temporal SDK has a testing suite that can be used in conjunction with a typical language specific testing framework.
