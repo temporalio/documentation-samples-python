@@ -7,7 +7,7 @@ with workflow.unsafe.imports_passed_through():
 
 """dacx
 In the Temporal Python SDK programming model, a Workflow Definition is defined as a class.
-The BackgroundCheck class below is an example of a basic Workflow Definition.
+The `BackgroundCheck class` below is an example of a basic Workflow Definition.
 dacx"""
 
 
@@ -29,17 +29,16 @@ Use the `@workflow.run` to mark the entry point method to be invoked. This must 
 
 Run methods have positional parameters.
 
-To spawn an [Activity Execution](notion://www.notion.so/activities#activity-execution), call `execute_activity()` inside your Workflow Definition.
+By default Workflows are run in a sandbox to help avoid non-deterministic code.
+If a call that is known to be non-deterministic is performed, an exception will be thrown in the workflow which will "fail the task" which means the workflow will not progress until fixed.
+Import your Activity code into the Workflow Definition using the `with [workflow.unsafe.imports_passed_through()](https://python.temporal.io/temporalio.workflow.unsafe.html#imports_passed_through)` context manager.
 
+To spawn an [Activity Execution](https://python.temporal.io/temporalio.workflow.html#execute_activity), call `execute_activity()` inside your Workflow Definition.
 This API is available from the `workflow` module from the `temporalio` package.
-
 The `execute_activity` API call requires either `schedule_to_close_timeout` or `start_to_close_timeout`.
 
 In this example, pass in the Activity name, `ssn_trace_activity` and an argument, `ssn`.
 We get into the best practices around Workflow params and returns in the one of the next sections.
-
-In regards to code organization, we recommend organizing Workflow code together with other Workflow code.
-For example, in a small project like this, it is still a best practice to have a dedicated file for each Workflow.
 dacx"""
 
 """ @dacx
@@ -64,5 +63,5 @@ tags:
 - go sdk
 - workflow
 - developer guide
-lines: 25-43
+lines: 25-42
 @dacx """

@@ -2,8 +2,8 @@ from temporalio import activity
 
 """dacx
 In the Temporal Python SDK programming model, an Activity is an function.
-
 You can use asynchronous, synchronous multithreaded, and synchronous multiprocess/other.
+
 Below is an example of an Activity defined as a function.
 dacx"""
 
