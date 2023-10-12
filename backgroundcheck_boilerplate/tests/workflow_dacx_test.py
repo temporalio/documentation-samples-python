@@ -91,17 +91,5 @@ tags:
 - testing
 - developer guide
 - go sdk
-lines: 29-44
-@dacx """
-
-""" @dacx
-id: backgroundcheck-boilerplate-add-workflow-test-details
-title: Add Workflow function test details
-description: Details about how to test Workflow code
-label: Test Workflow code details
-tags:
-- testing
-- developer guide
-- go sdk
-lines: 47-57
+lines: 47-57, 29-44
 @dacx """

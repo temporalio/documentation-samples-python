@@ -1,10 +1,9 @@
-FROM golang:1.20 AS builder
-
+FROM python:3.11
+RUN mkdir /app
+COPY . /app
+COPY pyproject.toml /app
 WORKDIR /app
-
-COPY . .
-
-RUN go get
-RUN go build -o bin ./self_hosted_worker/main_dacx.go
-
-ENTRYPOINT ["/app/bin"]
+RUN pip3 install poetry
+RUN poetry config virtualenvs.create false
+RUN poetry install
+CMD [ "poetry", "run", "python", "/app/run_worker.py" ]
