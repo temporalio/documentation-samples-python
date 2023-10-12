@@ -47,11 +47,61 @@ async def test_execute_workflow():
 """dacx
 This is a unit test written in Python using the pytest library.
 
-The test checks the `execute_workflow` method of the `BackgroundCheck` workflow. 
+The test checks the `execute_workflow` method of the `BackgroundCheck` workflow.
 
-The test creates a new `WorkflowEnvironment` and a `Worker` with a task queue and the `BackgroundCheck` workflow and `ssn_trace_activity` activity. 
+The test creates a new `WorkflowEnvironment` and a `Worker` with a task queue and the `BackgroundCheck` workflow and `ssn_trace_activity` activity.
 
-Then, it executes the `BackgroundCheck.run` method with a social security number and a unique ID, and asserts that the result is equal to "pass". 
+Then, it executes the `BackgroundCheck.run` method with a social security number and a unique ID, and asserts that the result is equal to "pass".
 
 The test is marked with `@pytest.mark.asyncio` to indicate that it is an asynchronous test.
 dacx"""
+
+""" @dacx
+id: backgroundcheck-boilerplate-add-test-framework
+title: Add a testing framework
+description: How to add a testing framework to your Temporal Application.
+label: Test framework
+lines: 11-14
+tags:
+- testing
+- developer guide
+- test framework
+- python sdk
+@dacx """
+
+""" @dacx
+id: backgroundcheck-boilerplate-add-test-framework-details
+title: Add a testing framework details
+description: How to add a testing framework to your Temporal Application.
+label: Test framework details
+lines: 16-26
+tags:
+- testing
+- developer guide
+- test framework
+- go sdk
+@dacx """
+
+""" @dacx
+id: backgroundcheck-boilerplate-add-workflow-tests
+title: Add Workflow function tests
+description: How to test Workflow code
+label: Test Workflow code
+tags:
+- testing
+- developer guide
+- go sdk
+lines: 29-44
+@dacx """
+
+""" @dacx
+id: backgroundcheck-boilerplate-add-workflow-test-details
+title: Add Workflow function test details
+description: Details about how to test Workflow code
+label: Test Workflow code details
+tags:
+- testing
+- developer guide
+- go sdk
+lines: 47-57
+@dacx """

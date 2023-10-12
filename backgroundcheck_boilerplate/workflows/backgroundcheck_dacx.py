@@ -25,13 +25,13 @@ class BackgroundCheck:
 """dacx
 Use the `@workflow.defn` decorator on the `BackgroundCheck` class to identify a Workflow.
 
-Use the `@workflow.run` to mark the entry point method to be invoked. This must be set on one asynchronous method defined on the same class as `@workflow.defn`. 
+Use the `@workflow.run` to mark the entry point method to be invoked. This must be set on one asynchronous method defined on the same class as `@workflow.defn`.
 
 Run methods have positional parameters.
 
 To spawn an [Activity Execution](notion://www.notion.so/activities#activity-execution), call `execute_activity()` inside your Workflow Definition.
 
-This API is available from the `workflow` module from the `temporalio` package. 
+This API is available from the `workflow` module from the `temporalio` package.
 
 The `execute_activity` API call requires either `schedule_to_close_timeout` or `start_to_close_timeout`.
 

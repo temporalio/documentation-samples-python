@@ -15,3 +15,16 @@ async def test_ssn_trace_activity() -> str:
     assert expected_output == await activity_environment.run(
         ssn_trace_activity, "55-55-555"
     )
+
+
+""" @dacx
+id: backgroundcheck-boilerplate-add-activity-tests
+title: Add Activity function tests
+description: How to test Activity code
+label: Test Activity code
+lines: 6-8, 11-17
+tags:
+- testing
+- developer guide
+- python sdk
+@dacx """
