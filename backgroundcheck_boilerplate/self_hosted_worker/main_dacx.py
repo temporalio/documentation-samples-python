@@ -11,6 +11,7 @@ from workflows import BackgroundCheck
 Set IP address, port, and Namespace in the Temporal Client options.
 dacx"""
 
+
 async def main():
 
     with open(os.getenv("TEMPORAL_MTLS_TLS_CERT"), "rb") as f:
@@ -45,7 +46,7 @@ id: backgroundcheck-boilerplate-self-hosted-worker
 title: Customize Client options
 description: Configure the Temporal Client with the specific IP Address of the Temporal Server on your network.
 label: Self-hosted Client options
-lines: 1-40
+lines: 1-42
 tags:
 - worker
 - self-hosted

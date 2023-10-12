@@ -46,7 +46,7 @@ tags:
 - go sdk
 - code sample
 - activity
-lines: 3-8, 11-13
+lines: 3-8, 1, 11-13
 @dacx """
 
 """ @dacx
