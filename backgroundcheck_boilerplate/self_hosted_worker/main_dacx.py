@@ -11,7 +11,6 @@ from workflows import BackgroundCheck
 Set IP address, port, and Namespace in the Temporal Client options.
 dacx"""
 
-
 async def main():
 
     with open(os.getenv("TEMPORAL_MTLS_TLS_CERT"), "rb") as f:
