@@ -1,7 +1,6 @@
 import asyncio
-import os
 
-from temporalio.client import Client, TLSConfig
+from temporalio.client import Client
 from temporalio.worker import Worker
 
 from activities.ssntraceactivity_dacx import ssn_trace_activity
@@ -14,8 +13,8 @@ dacx"""
 
 async def main():
     client = await Client.connect(
-        "172.18.0.4:7233"
-    )  # The IP address of the Temporal Server on your network.
+        "172.18.0.4:7233"  # The IP address of the Temporal Server on your network.
+    )
 
     worker = Worker(
         client,

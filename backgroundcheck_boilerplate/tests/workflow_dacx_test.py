@@ -10,7 +10,7 @@ from workflows.backgroundcheck_dacx import BackgroundCheck
 
 """dacx
 Each Temporal SDK has a testing suite that can be used in conjunction with a typical language specific testing framework.
-In the Temporal Python SDK, the testing package (https://python.temporal.io/temporalio.testing.html) provides atest environment in which the Workflow and Activity code may be run for test purposes.
+In the Temporal Python SDK, the testing package (https://python.temporal.io/temporalio.testing.html) provides a test environment in which the Workflow and Activity code may be run for test purposes.
 dacx"""
 
 """dacx
