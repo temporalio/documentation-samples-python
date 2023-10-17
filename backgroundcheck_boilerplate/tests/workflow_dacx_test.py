@@ -17,10 +17,10 @@ dacx"""
 The `BackgroundCheck` Workflow code checks the following conditions:
 
 1. It receives a social security number and a unique ID as input parameters.
-2. It starts a new activity `ssn_trace_activity` with the input SSN.
-3. It waits for the activity to complete and returns the result.
-4. If the activity returns "pass", it logs a message indicating that the background check passed.
-5. If the activity returns "fail", it raises an exception indicating that the background check failed.
+2. It starts a new Activity `ssn_trace_activity` with the input SSN.
+3. It waits for the Activity to complete and returns the result.
+4. If the Activity returns "pass", it logs a message indicating that the background check passed.
+5. If the Activity returns "fail", it raises an exception indicating that the background check failed.
 
 We can also perform a Workflow Replay test, and we'll provide detailed coverage of this topic in another section.
 dacx"""
@@ -47,9 +47,9 @@ async def test_execute_workflow():
 """dacx
 This is a unit test written in Python using the pytest library.
 
-The test checks the `execute_workflow` method of the `BackgroundCheck` workflow.
+The test checks the `execute_workflow` method of the `BackgroundCheck` Workflow.
 
-The test creates a new `WorkflowEnvironment` and a `Worker` with a task queue and the `BackgroundCheck` workflow and `ssn_trace_activity` activity.
+The test creates a new `WorkflowEnvironment` and a `Worker` with a Task Queue and the `BackgroundCheck` Workflow and `ssn_trace_activity` activity.
 
 Then, it executes the `BackgroundCheck.run` method with a social security number and a unique ID, and asserts that the result is equal to "pass".
 
