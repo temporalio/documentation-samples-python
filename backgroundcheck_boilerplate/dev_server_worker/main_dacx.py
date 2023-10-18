@@ -39,7 +39,7 @@ id: backgroundcheck-boilerplate-run-a-dev-server-worker
 title: Run a dev server Worker
 description: Define the code needed to run a Worker Process in Go.
 label: Dev server Worker
-lines: 1-34
+lines: 1-35
 tags:
 - worker
 - developer guide
