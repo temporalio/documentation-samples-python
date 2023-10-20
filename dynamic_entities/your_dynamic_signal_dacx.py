@@ -37,8 +37,8 @@ class GreetingWorkflow:
                 return greetings
 
     @workflow.signal(dynamic=True)
-    async def dynamic_signal(self, input: str, args: Sequence[RawValue]) -> None:
-        await self._pending_greetings.put(input)
+    async def dynamic_signal(self, name: str, args: Sequence[RawValue]) -> None:
+        await self._pending_greetings.put(name)
 
     @workflow.signal
     def exit(self) -> None:
