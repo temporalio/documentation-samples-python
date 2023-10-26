@@ -1,9 +1,9 @@
-# Dynamic Entities README
+# Dynamic Handlers README
 
 Temporal supports Dynamic Workflows, Activities, Signals, and Queries.
-These are unnamed entities that are invoked if no other statically defined entity with the given name exists.
+These are unnamed handlers that are invoked if no other statically defined handler with the given name exists.
 
-This is a sample project to demonstrate how to use the Dynamic Entities.
+This is a sample project to demonstrate how to use the Dynamic Handlers.
 
 
 1. Run the following at the root of the directory.
