@@ -12,7 +12,6 @@ async def main():
         task_queue="hello-child-workflow-task-queue",
         workflows=[GreetingWorkflow, ComposeGreetingWorkflow],
     ):
-
         result = await client.execute_workflow(
             GreetingWorkflow.run,
             "World",

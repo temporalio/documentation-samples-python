@@ -15,13 +15,15 @@ async def main():
         "workflow-schedule-id",
     )
     now = datetime.utcnow()
-    await handle.backfill(
-        ScheduleBackfill(
-            start_at=now - timedelta(minutes=10),
-            end_at=now - timedelta(minutes=9),
-            overlap=ScheduleOverlapPolicy.ALLOW_ALL,
+    (
+        await handle.backfill(
+            ScheduleBackfill(
+                start_at=now - timedelta(minutes=10),
+                end_at=now - timedelta(minutes=9),
+                overlap=ScheduleOverlapPolicy.ALLOW_ALL,
+            ),
         ),
-    ),
+    )
 
     print(f"Result: {handle}")
 
@@ -40,5 +42,5 @@ tags:
  - schedules
  - python sdk
  - code sample
-lines: 6-9, 12-24
+lines: 1-26
 @dacx """

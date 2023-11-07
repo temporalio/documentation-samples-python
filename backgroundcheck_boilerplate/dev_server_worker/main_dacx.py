@@ -23,7 +23,8 @@ async def main():
 
     worker = Worker(
         client,
-        task_queue="background-check-boilerplate-task-queue",
+        namespace="backgroundcheck_namespace",
+        task_queue="backgroundcheck-boilerplate-task-queue",
         workflows=[BackgroundCheck],
         activities=[ssn_trace_activity],
     )
@@ -39,7 +40,7 @@ id: backgroundcheck-boilerplate-run-a-dev-server-worker
 title: Run a dev server Worker
 description: Define the code needed to run a Worker Process in Go.
 label: Dev server Worker
-lines: 1-35
+lines: 1-36
 tags:
 - worker
 - developer guide
