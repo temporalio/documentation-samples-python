@@ -8,8 +8,8 @@ from temporalio.worker.workflow_sandbox import (
     SandboxRestrictions,
 )
 
-from backgroundcheck import BackgroundCheck
-from backgroundcheck_non_deterministic_code import BackgroundCheckNonDeterministic
+from backgroundcheck_replay.backgroundcheck_dacx import BackgroundCheck
+from backgroundcheck_replay.backgroundcheck_non_deterministic_code_dacx import BackgroundCheckNonDeterministic
 from ssntraceactivity import ssn_trace_activity
 
 
