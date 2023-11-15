@@ -88,7 +88,7 @@ id: inspect-the-new-event-history
 title: Inspect the new Event History
 description: After making changes to the code, we must update the Event History JSON file to get tests to pass.
 label: Inspect new Event History
-lines: 48-88
+lines: 32-72
 tags:
 - tests
 - replay

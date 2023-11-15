@@ -68,7 +68,7 @@ id: backgroundcheck-replay-intrinsic-non-determinism
 title: Intrinsic non-deterministic logic
 description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
 label: intrinsic-non-deterministic-logic
-lines: 1-53
+lines: 1-55
 tags:
 - tests
 - replay
@@ -80,7 +80,7 @@ id: backgroundcheck-replay-inspecting-the-non-deterministic-error
 title: Intrinsic non-deterministic logic
 description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
 label: intrinsic-non-deterministic-logic
-lines: 64-132
+lines: 58-64
 tags:
 - tests
 - replay
