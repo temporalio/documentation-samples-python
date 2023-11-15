@@ -10,9 +10,12 @@ with workflow.unsafe.imports_passed_through():
 In the following sample, we add a couple of logging statements and a Timer to the Workflow code to see how this affects the Event History.
 
 Use the `asyncio.sleep()` API to cause the Workflow to sleep for a minute before the call to execute the Activity.
-The Temporal Python SDK offers `workflow.random()`, `workflow.time()`, `workflow.time_ns()`, and `workflow.uuid4()`.
-
-These are determistic implementations of their corresponding libaries. Consult the API documentation for more details.
+The Temporal Python SDK offers deterministic implementations to the following API calls:
+- [workflow.now()](https://python.temporal.io/temporalio.workflow.html#now)
+- [workflow.random()](https://python.temporal.io/temporalio.workflow.html#random)
+- [workflow.time_ns()](https://python.temporal.io/temporalio.workflow.html#time_ns)
+- [workflow.time()](https://python.temporal.io/temporalio.workflow.html#time)
+- [workflow.uuid4()](https://python.temporal.io/temporalio.workflow.html#uuid4)
 
 Use the `workflow.logger` API to log from Workflows to avoid seeing repeated logs from the Replay of the Workflow code.
 dacx"""
@@ -35,7 +38,7 @@ You should expect to see the `TestReplayWorkflowHistoryFromFile` test fail.
 This is because the code we added creates new Events and alters the Event History sequence.
 
 To get this test to pass, we must get an updated Event History JSON file.
-[Start a new Workflow](notion://www.notion.so/dev-guide/go/project-setup#start-workflow) and after it is complete [download the Event History as a JSON object](notion://www.notion.so/temporalio/5d1d098c694d41c2820e44333295dd57#retrieve-event-history).
+[Start a new Workflow](notion://www.notion.so/dev-guide/go/project-setup#start-workflow) and after it is complete [download the Event History as a JSON object](#retrieve-event-history).
 
 :::info Double check Task Queue names
 
@@ -45,15 +48,15 @@ And, always make sure that all Workers listening to the same Task Queue are regi
 
 :::
 
-If you inspect the new Event History, you will see two new Events in response to the `workflow.Sleep()` API call which send the [StartTimer Command](notion://www.notion.so/references/commands#starttimer) to the Server:
+If you inspect the new Event History, you will see two new Events in response to the `asyncio.sleep()` API call which send the [StartTimer Command](/references/commands#starttimer) to the Server:
 
 - `TimerStarted`
 - `TimerFired`
 
 However, it is also important to note that you don't see any Events related to logging.
-And if you were to remove the Sleep call from the code, there wouldn't be a compatability issue with the previous code.
+And if you were to remove the Sleep call from the code, there wouldn't be a compatibility issue with the previous code.
 This is to highlight that only certain code changes within Workflow code is non-deterministic.
-The basic thing to remember is that if the API call causes a [Command](notion://www.notion.so/references/commands#) to create Events in the Workflow History that takes a new path from the existing Event History then it is a non-deterministic change.
+The basic thing to remember is that if the API call causes a [Command](/references/commands#) to create Events in the Workflow History that takes a new path from the existing Event History then it is a non-deterministic change.
 
 This becomes a critical aspect of Workflow development when there are running Workflows that have not yet completed and rely on earlier versions of the code.
 
@@ -76,7 +79,7 @@ id: add-sleep-for-one-minute
 title: Add a call to sleep
 description: Add a call to sleep for one minute to the beginning of the Workflow.
 label: Add sleep call
-lines: 1-31
+lines: 1-34
 tags:
 - timer
 - sleep
@@ -88,7 +91,7 @@ id: inspect-the-new-event-history
 title: Inspect the new Event History
 description: After making changes to the code, we must update the Event History JSON file to get tests to pass.
 label: Inspect new Event History
-lines: 32-72
+lines: 35-75
 tags:
 - tests
 - replay

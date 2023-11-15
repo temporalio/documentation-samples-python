@@ -17,8 +17,9 @@ The following are some common operations that **can't** be done inside of a Work
 - Accessing / mutating external systems or state.
 This includes calling an external API, conducting a file I/O operation, talking to another service, etc. (use Activities instead).
 - Relying on system time.
-    - Use `workflow.Now()` as a replacement for `time.Now()`.
-    - Use `workflow.Sleep()` as a replacement for `time.Sleep()`.
+    - Use [workflow.now()](https://python.temporal.io/temporalio.workflow.html#now) as a replacement for `time.now()`.
+    - Workflows are backed by custom https://docs.python.org/3/library/asyncio.html event loop. Meaning that many common `asyncio` calls works as expected.
+        - Use `asyncio.sleep()`.
 - Iterating over data structures with unknown ordering.
 This includes iterating over maps using `range`, because with `range` the order of the map's iteration is randomized.
 Instead you can collect the keys of the map, sort them, and then iterate over the sorted keys to access the map.
@@ -60,7 +61,7 @@ This is because, Workflows in the Python SDK run in a sandbox, by default, to he
 
 The sandbox is not foolproof and non-determinism can still occur. You are encouraged to define Workflows in files without side effects.
 
-For information on the Sandbox, see []().
+For information on the Sandbox, see Sandbox.
 dacx"""
 
 """ @dacx
@@ -68,7 +69,7 @@ id: backgroundcheck-replay-intrinsic-non-determinism
 title: Intrinsic non-deterministic logic
 description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
 label: intrinsic-non-deterministic-logic
-lines: 1-55
+lines: 1-56
 tags:
 - tests
 - replay
@@ -80,7 +81,7 @@ id: backgroundcheck-replay-inspecting-the-non-deterministic-error
 title: Intrinsic non-deterministic logic
 description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
 label: intrinsic-non-deterministic-logic
-lines: 58-64
+lines: 59-65
 tags:
 - tests
 - replay
