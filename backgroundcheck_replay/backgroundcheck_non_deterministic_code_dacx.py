@@ -18,7 +18,7 @@ The following are some common operations that **can't** be done inside of a Work
 This includes calling an external API, conducting a file I/O operation, talking to another service, etc. (use Activities instead).
 - Relying on system time.
     - Use [workflow.now()](https://python.temporal.io/temporalio.workflow.html#now) as a replacement for `time.now()`.
-    - Workflows are backed by custom https://docs.python.org/3/library/asyncio.html event loop. Meaning that many common `asyncio` calls works as expected.
+    - Workflows are backed by a custom [asyncio](https://docs.python.org/3/library/asyncio.html) event loop. Meaning that many common `asyncio` calls works as expected.
         - Use `asyncio.sleep()`.
 - Iterating over data structures with unknown ordering.
 This includes iterating over maps using `range`, because with `range` the order of the map's iteration is randomized.
@@ -59,9 +59,9 @@ class BackgroundCheckNonDeterministic:
 """dacx
 This is because, Workflows in the Python SDK run in a sandbox, by default, to help avoid non-determinism code.
 
-The sandbox is not foolproof and non-determinism can still occur. You are encouraged to define Workflows in files without side effects.
+The sandbox is not foolproof and non-determinism can still occur. You are encouraged to define Workflows in files without side effects. This practice ensures a higher level of Workflow consistency and predictability.
 
-For information on the Sandbox, see [Sandbox](/python/python-sandbox-environment).
+For a deeper understanding of how the sandbox operates and its limitations, please refer to the guide on the [Sandbox](/python/python-sandbox-environment).
 dacx"""
 
 """ @dacx

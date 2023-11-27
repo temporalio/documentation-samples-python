@@ -4,7 +4,9 @@ from temporalio.client import Client
 from temporalio.worker import Worker
 
 from backgroundcheck_replay.backgroundcheck_dacx import BackgroundCheck
-from backgroundcheck_replay.backgroundcheck_non_deterministic_code_dacx import BackgroundCheckNonDeterministic
+from backgroundcheck_replay.backgroundcheck_non_deterministic_code_dacx import (
+    BackgroundCheckNonDeterministic,
+)
 from ssntraceactivity import ssn_trace_activity
 
 
