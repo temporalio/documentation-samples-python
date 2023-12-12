@@ -71,7 +71,7 @@ id: backgroundcheck-boilerplate-cloud-worker-details
 title: Cloud Worker details
 description: When specifying the Temporal Cloud Namespace, make sure to append the Account Id as it appears in the url of the Cloud UI.
 label: Cloud Worker details
-lines: 48-55
+lines: 47-54
 tags:
 - worker
 - cloud certificate
