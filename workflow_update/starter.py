@@ -1,6 +1,6 @@
 import asyncio
 from temporalio.client import Client
-from workflow_update.update_workflow_dacx import HelloWorldWorkflow
+from workflow_update.update_workflow import HelloWorldWorkflow
 
 """dacx
 To send a Workflow Update from a Temporal Client, set the [execute_update](https://python.temporal.io/temporalio.client.WorkflowHandle.html#execute_update) method from the [WorkflowHandle](https://python.temporal.io/temporalio.client.WorkflowHandle.html) class.

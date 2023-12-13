@@ -8,8 +8,6 @@ These updates can be triggered during the lifecycle of a Workflow Execution.
 
 To define an update handler, use the [@workflow.update](https://python.temporal.io/temporalio.workflow.html#update) decorator on a method within your Workflow. This decorator can be applied to both asynchronous and synchronous methods.
 
-**Update Handler structure**
-
 - **Decorator Usage:** Apply `@workflow.update` to the method intended to handle updates.
 - **Overriding:** If a method with this decorator is overridden, the overriding method should also be decorated with `@workflow.update`.
 - **Validator Method:** Optionally, you can define a validator method for the update handler. This validator is specified using `@update_handler_method_name.validator` and is invoked before the update handler.
@@ -44,5 +42,5 @@ tags:
  - code sample
  - workflow
  - update
-lines: 3-18, 31-34
+lines: 3-16, 29-32
 @dacx """
