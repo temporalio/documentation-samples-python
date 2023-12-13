@@ -1,7 +1,7 @@
 import asyncio
 from temporalio.worker import Worker
 from temporalio.client import Client
-from update_workflow import HelloWorldWorkflow
+from workflow_update.update_workflow_dacx import HelloWorldWorkflow
 
 
 async def run_workflow():
