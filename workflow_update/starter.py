@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
 """ @dacx
 id: how-to-send-an-update-from-a-client-in-python
-title: How to send an Update from a Temporal Client in Python
+title: How to send an Update from a Temporal Client
 label: Send Update from Client
 description: Use the execute_update method from the WorkflowHandle class to send an Update to a Workflow Execution.
 tags:

@@ -34,7 +34,7 @@ class HelloWorldWorkflow:
 
 """ @dacx
 id: how-to-define-an-update-in-python
-title: How to define an Update in Python
+title: How to define an Update
 label: Define Update
 description: Define an Update by giving it a name to identify it.
 tags:
